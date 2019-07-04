@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--LLBLGen Pro v5.4 project file. Do not manually edit this file. Incorrect references could lead to an unloadable project file.-->
+<Project Version="5.4" TargetFrameworkName="LLBLGen Pro Runtime Framework" UseLegacyDefaults="false">
+  <Properties>
+    <Abbreviations />
+    <Property Name="AdditionalTaskPerformerFolder" Value="" />
+    <Property Name="AdditionalTasksFolder" Value="" />
+    <Property Name="AdditionalTemplatesFolder" Value="" />
+    <Property Name="AdditionalTypeConverterFolder" Value="" />
+    <Property Name="AddNewElementsAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AddNewFieldsAfterRefresh_v5" Value="true" />
+    <Property Name="AddNewFieldsAfterRelationalModelDataSync_v5" Value="true" />
+    <Property Name="AddNewViewsAsEntitiesAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewViewsAsEntitiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AutoAddManyToManyRelationships" Value="false" />
+    <Property Name="AutoAssignSequencesToIntegerPks" Value="true" />
+    <Property Name="AutoAssignTypeConverterToFieldMapping" Value="true" />
+    <Property Name="ConnectionStringKeyNamePattern" Value="JwtSecurityConn" />
+    <Property Name="DefaultDeleteRuleAction" Value="1" />
+    <Property Name="DefaultUpdateRuleAction" Value="0" />
+    <Property Name="EncodingToUse" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForTable" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForView" Value="4" />
+    <Property Name="EntityFieldNameStripPattern" Value="{}{}" />
+    <Property Name="EntityNameStripPattern" Value="{tbl_}{}" />
+    <Property Name="ExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="FailCodeGenerationOnWriteError" Value="false" />
+    <Property Name="FieldMappedOntoRelatedFieldPattern" Value="{$RelatedFieldName}" />
+    <Property Name="FkFieldsAreNamedAfterTargetField" Value="true" />
+    <Property Name="ForeignKeyConstraintPattern" Value="FK_{$Guid}" />
+    <Property Name="ForeignKeyFieldPattern" Value="{$NavigatorName}{$RelatedFieldName}" />
+    <Property Name="GroupUsage" Value="0" />
+    <Property Name="IdentifyingFieldsFollowDBPrimaryKeyConstraints_v5" Value="true" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseInsensitiveDBs" Value="false" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseSensitiveDBs" Value="false" />
+    <Property Name="LengthPrecisionScaleFollowDBLengthPrecisionScale_v5" Value="true" />
+    <Property Name="MakeElementNamePascalCasing" Value="true" />
+    <Property Name="NavigatorMappedOntoManyToManyPattern" Value="{$EndEntityName}CollectionVia{$IntermediateEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneManyToOnePattern" Value="{$EndEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneToManyPattern" Value="{$EndEntityName$P}" />
+    <Property Name="NonExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="PreferDecimalOverCurrencyTypes" Value="true" />
+    <Property Name="PreferNaturalCharacterTypes" Value="true" />
+    <Property Name="PreferSystemSequencesOverSchemaSequencesIfApplicable" Value="true" />
+    <Property Name="PreferVariableLengthTypes" Value="true" />
+    <Property Name="PrimaryKeyConstraintPattern" Value="PK_{$Guid}" />
+    <Property Name="ProjectCreator" Value="Iain Kiloh" />
+    <Property Name="ProjectName" Value="JwtSecurity" />
+    <Property Name="ReflectNullabilityOfElementFieldInTargetField_v5" Value="false" />
+    <Property Name="ReflectTypeOfElementFieldInTargetField_v5" Value="true" />
+    <Property Name="RelationalModelDataElementNameCasingCaseInsensitiveDBs" Value="3" />
+    <Property Name="RelationalModelDataElementNameCasingCaseSensitiveDBs" Value="3" />
+    <Property Name="RelationshipsFollowDBForeignKeyConstraints_v5" Value="true" />
+    <Property Name="RemoveUnderscoresFromElementName" Value="true" />
+    <Property Name="RemoveUnmappedElementsAfterRefresh_v5" Value="false" />
+    <Property Name="RemoveUnmappedElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRefresh" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRelationalModelDataSync" Value="false" />
+    <Property Name="RetrieveDBCustomProperties" Value="false" />
+    <Property Name="RootNamespace" Value="" />
+    <Property Name="SequenceNameMatchingPattern" Value="SEQ_{$TableName}" />
+    <Property Name="SequencePattern" Value="SEQ_{$EntityName}" />
+    <Property Name="SetGroupNameAfterSchemaName" Value="true" />
+    <Property Name="SetSchemaNameAfterGroupName" Value="true" />
+    <Property Name="SingularizeElementNames" Value="true" />
+    <Property Name="StoredProcNameStripPattern" Value="{pr_, sp_}{}" />
+    <Property Name="StoreTimeLastGeneratedIntoProject" Value="false" />
+    <Property Name="StoreTimeLastSyncIntoProject" Value="true" />
+    <Property Name="SyncMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="SyncRelationalModelDataElementNameWithModelElementName_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="TableValuedFunctionNameStripPattern" Value="{fn_, pr_, sp_}{}" />
+    <Property Name="TargetPerEntityEdgesRequireBackingFkConstraint" Value="true" />
+    <Property Name="TypedViewFieldNameStripPattern" Value="{}{}" />
+    <Property Name="TypedViewMappedOnResultsetPattern" Value="{$ProcFunctionName}{$ResultsetName}Result" />
+    <Property Name="TypedViewNameStripPattern" Value="{vw_}{}" />
+    <Property Name="UniqueConstraintPattern" Value="UC_{$Guid}" />
+    <Property Name="UniqueConstraintsFollowDBUniqueConstraints_v5" Value="true" />
+    <Property Name="UpdateCustomPropertiesAfterRefresh_v5" Value="false" />
+    <Property Name="UpdateCustomPropertiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="UseCustomFieldOrderingOnNewElements" Value="false" />
+  </Properties>
+  <TypeShortcuts />
+  <IgnoredWarnings />
+  <SavedSearchQueries />
+  <CodeGenerationCyclePreferences>
+    <OutputType Value="3">
+      <LastUsedPreferences>
+        <DestinationRootFolder Value=".\" />
+        <FrameworkName Value="LLBLGen Pro Runtime Framework" />
+        <LanguageName Value="C#" />
+        <PlatformName Value=".NET Standard 2.0" />
+        <PresetName Value="SD.Presets.Adapter.General.Netstandard" />
+        <RootNamespace Value="JwtSecurity" />
+        <TemplateGroup Value="Adapter" />
+        <TemplateBindings>
+          <Binding Name="SD.TemplateBindings.PostgreSqlSpecific" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.Netstandard20" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates" />
+          <Binding Name="SD.TemplateBindings.General" />
+        </TemplateBindings>
+      </LastUsedPreferences>
+    </OutputType>
+  </CodeGenerationCyclePreferences>
+  <OutputSettingValues>
+    <SettingValues>
+      <SettingValue Name="1:AdapterDbGenericSubFolderName" Value="DatabaseGeneric" Type="18" />
+      <SettingValue Name="1:AdapterDbSpecificNamespaceSuffix" Value="DatabaseSpecific" Type="18" />
+      <SettingValue Name="1:AdapterDbSpecificProjectFileSuffix" Value="DBSpecific" Type="18" />
+      <SettingValue Name="1:AdapterDbSpecificSubFolderName" Value="DatabaseSpecific" Type="18" />
+      <SettingValue Name="1:ConvertNulledReferenceTypesToDefaultValue" Value="true" Type="3" />
+      <SettingValue Name="1:EntityBaseClassNameDefault" Value="CommonEntityBase" Type="18" />
+      <SettingValue Name="1:FieldPropertyIsPublicDefault" Value="true" Type="3" />
+      <SettingValue Name="1:GenerateAsNullableTypeDefault" Value="true" Type="3" />
+      <SettingValue Name="1:GenerateEntityFieldFactory" Value="false" Type="3" />
+      <SettingValue Name="1:GenerateEntityFieldsFactory" Value="false" Type="3" />
+      <SettingValue Name="1:InlineValueTypedFields" Value="true" Type="3" />
+      <SettingValue Name="1:LazyLoadingWithoutResultReturnsNew" Value="false" Type="3" />
+      <SettingValue Name="1:NavigatorPropertyIsPublicDefault" Value="true" Type="3" />
+      <SettingValue Name="1:SupportedActionCombinations" Value="0,1,2,3,4,5,6,7" Type="18" />
+      <SettingValue Name="1:TdlEmitTimeDateInOutputFiles" Value="false" Type="3" />
+      <SettingValue Name="1:TypedListOutputTypeDefault" Value="PocoWithQuerySpecQuery" Type="18" />
+      <SettingValue Name="1:TypedViewOutputTypeDefault" Value="PocoWithQuerySpecQuery" Type="18" />
+    </SettingValues>
+  </OutputSettingValues>
+  <CodeGenerationMetaDataDefaults>
+    <TargetElement Type="256">
+      <Defaults>
+        <Attributes>
+          <Attribute Value="Browsable($false)" />
+        </Attributes>
+      </Defaults>
+    </TargetElement>
+  </CodeGenerationMetaDataDefaults>
+  <EntityModel>
+    <ValueTypeDefinitions />
+    <EntityDefinitions>
+      <EntityDefinition Name="ApiClient" ObjectID="fb14650b-5e17-4390-b0e7-984ebf042e0a">
+        <Fields>
+          <Field Name="ClientId" Type="string" MaxLength="50" IsPrimaryKey="true" />
+          <Field Name="ClientName" Type="string" MaxLength="50" />
+          <Field Name="ClientSecret" Type="string" MaxLength="50" />
+          <Field Name="RefreshTokenLifetimeMinutes" Type="int" Precision="10" />
+          <Field Name="TokenLifetimeMinutes" Type="int" Precision="10" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Role" ObjectID="3fcdff56-0c1e-401b-a221-a43251a5464e">
+        <Fields>
+          <Field Name="RoleId" Type="int" Precision="10" IsPrimaryKey="true" />
+          <Field Name="RoleName" Type="string" MaxLength="255" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="User" ObjectID="f2798d1b-450b-4f22-a869-45ff344e76f3">
+        <Fields>
+          <Field Name="PasswordHash" Type="string" MaxLength="255" />
+          <Field Name="Salt" Type="string" MaxLength="255" />
+          <Field Name="UserEmail" Type="string" MaxLength="255" />
+          <Field Name="UserId" Type="int" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="UserRole" ObjectID="251a1287-4258-44f0-9442-550a4a77863e">
+        <Fields>
+          <Field Name="RoleId" Type="int" Precision="10" />
+          <Field Name="UserId" Type="int" Precision="10" />
+          <Field Name="UserRoleId" Type="int" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+    </EntityDefinitions>
+    <Relationships>
+      <NormalRelationship Name="UserRole.Role-Role.UserRoles" Start=":UserRole" End=":Role" StartNavigator="Role" EndNavigator="UserRoles" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="RoleId" PkField="RoleId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="UserRole.User-User.UserRoles" Start=":UserRole" End=":User" StartNavigator="User" EndNavigator="UserRoles" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="UserId" PkField="UserId" />
+        </FieldRelationships>
+      </NormalRelationship>
+    </Relationships>
+    <InheritanceHierarchies />
+  </EntityModel>
+  <TargetDatabases>
+    <TargetDatabase Type="88EBFD8C-CBDD-4452-88AF-1C99E41A123F" SyncSource="2">
+      <ConnectionElements>
+        <ConnectionElement Name="ServerName" Value="localhost" />
+        <ConnectionElement Name="CatalogName" Value="JwtSecurity" />
+        <ConnectionElement Name="UserID" Value="postgres" />
+        <ConnectionElement Name="Password" Value="" />
+        <ConnectionElement Name="PortNumber" Value="5432" />
+        <ConnectionElement Name="SslMode" Value="Disable" />
+      </ConnectionElements>
+      <SystemSequences>
+        <Sequence Name="SystemIdentity" />
+      </SystemSequences>
+      <Catalogs>
+        <Catalog Name="JwtSecurity">
+          <Schemas>
+            <Schema Name="public" SyncSource="2" LastSyncWithDatabase="2019-07-02T21:30:56.2996779Z">
+              <Sequences>
+                <Sequence Name="public.&quot;Role&quot;_RoleId" />
+                <Sequence Name="Role_RoleId_seq" />
+                <Sequence Name="User_UserId_seq" />
+                <Sequence Name="UserRole_UserRoleId_seq" />
+              </Sequences>
+              <Tables>
+                <Table Name="ApiClient">
+                  <PkConstraintName Name="ApiClient_pkey" />
+                  <Fields>
+                    <Field Name="ClientId" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="50" />
+                    <Field Name="ClientName" Ordinal="2" DbType="24" Length="50" />
+                    <Field Name="ClientSecret" Ordinal="3" DbType="24" Length="50" />
+                    <Field Name="TokenLifetimeMinutes" Ordinal="4" DbType="9" Precision="10" />
+                    <Field Name="RefreshTokenLifetimeMinutes" Ordinal="5" DbType="9" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="Role">
+                  <PkConstraintName Name="Role_pkey" />
+                  <Fields>
+                    <Field Name="RoleName" Ordinal="2" DbType="24" Length="255" />
+                    <Field Name="RoleId" Ordinal="3" IsIdentity="true" IsPrimaryKey="true" HasDefaultValue="true" DefaultValue="nextval('&quot;Role_RoleId_seq&quot;'::regclass)" DefaultSequence="JwtSecurity:public:Role_RoleId_seq" DbType="9" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="User">
+                  <PkConstraintName Name="User_pkey" />
+                  <Fields>
+                    <Field Name="UserEmail" Ordinal="2" DbType="24" Length="255" />
+                    <Field Name="PasswordHash" Ordinal="3" DbType="24" Length="255" />
+                    <Field Name="Salt" Ordinal="4" DbType="24" Length="255" />
+                    <Field Name="UserId" Ordinal="5" IsIdentity="true" IsPrimaryKey="true" HasDefaultValue="true" DefaultValue="nextval('&quot;User_UserId_seq&quot;'::regclass)" DefaultSequence="JwtSecurity:public:User_UserId_seq" DbType="9" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="UserRole">
+                  <PkConstraintName Name="UserRole_pkey" />
+                  <Fields>
+                    <Field Name="UserId" Ordinal="2" DbType="9" Precision="10" />
+                    <Field Name="RoleId" Ordinal="3" DbType="9" Precision="10" />
+                    <Field Name="UserRoleId" Ordinal="4" IsIdentity="true" IsPrimaryKey="true" HasDefaultValue="true" DefaultValue="nextval('&quot;UserRole_UserRoleId_seq&quot;'::regclass)" DefaultSequence="JwtSecurity:public:UserRole_UserRoleId_seq" DbType="9" Precision="10" />
+                  </Fields>
+                </Table>
+              </Tables>
+            </Schema>
+          </Schemas>
+          <ForeignKeyConstraints>
+            <ForeignKeyConstraint Name="public:UserRole:RoleFk">
+              <FieldPairs>
+                <FieldPair PkField="public:Role:RoleId" FkField="public:UserRole:RoleId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="public:UserRole:UserFk">
+              <FieldPairs>
+                <FieldPair PkField="public:User:UserId" FkField="public:UserRole:UserId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+          </ForeignKeyConstraints>
+        </Catalog>
+      </Catalogs>
+    </TargetDatabase>
+  </TargetDatabases>
+  <MappingStores>
+    <MappingStore Type="88EBFD8C-CBDD-4452-88AF-1C99E41A123F">
+      <EntityMappings>
+        <EntityMapping EntityName=":ApiClient" TargetName="JwtSecurity:public:ApiClient">
+          <FieldMappings>
+            <FieldMapping FieldName="ClientId" TargetFieldName="ClientId" />
+            <FieldMapping FieldName="ClientName" TargetFieldName="ClientName" />
+            <FieldMapping FieldName="ClientSecret" TargetFieldName="ClientSecret" />
+            <FieldMapping FieldName="RefreshTokenLifetimeMinutes" TargetFieldName="RefreshTokenLifetimeMinutes" />
+            <FieldMapping FieldName="TokenLifetimeMinutes" TargetFieldName="TokenLifetimeMinutes" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Role" TargetName="JwtSecurity:public:Role">
+          <FieldMappings>
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" SequenceToUse="JwtSecurity:public:Role_RoleId_seq" />
+            <FieldMapping FieldName="RoleName" TargetFieldName="RoleName" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":User" TargetName="JwtSecurity:public:User">
+          <FieldMappings>
+            <FieldMapping FieldName="PasswordHash" TargetFieldName="PasswordHash" />
+            <FieldMapping FieldName="Salt" TargetFieldName="Salt" />
+            <FieldMapping FieldName="UserEmail" TargetFieldName="UserEmail" />
+            <FieldMapping FieldName="UserId" TargetFieldName="UserId" SequenceToUse="JwtSecurity:public:User_UserId_seq" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":UserRole" TargetName="JwtSecurity:public:UserRole">
+          <FieldMappings>
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" />
+            <FieldMapping FieldName="UserId" TargetFieldName="UserId" />
+            <FieldMapping FieldName="UserRoleId" TargetFieldName="UserRoleId" SequenceToUse="JwtSecurity:public:UserRole_UserRoleId_seq" />
+          </FieldMappings>
+        </EntityMapping>
+      </EntityMappings>
+      <TypedViewMappings />
+      <SPCallMappings />
+      <TvfCallMappings />
+      <TypeConversionDefinitions />
+    </MappingStore>
+  </MappingStores>
+  <ModelViews />
+  <DerivedModels>
+    <DerivedModel Name="JwtSecurityContracts" ObjectID="520a8502-dd7b-41be-914e-2561f9d56c72" TargetFrameworkName="DTO Class Model" UseLegacyDefaults="false">
+      <CodeGenerationMetaDataDefaults>
+        <TargetElement Type="32768">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="Serializable" />
+              <Attribute Value="DataContract" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="65536">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="Serializable" />
+              <Attribute Value="DataContract" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="131072">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="DataMember" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="262144">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="DataMember" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="524288">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="DataMember" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+      </CodeGenerationMetaDataDefaults>
+      <Settings>
+        <Property Name="DerivedElementClassNameSuffix" Value="" />
+        <Property Name="PrefixDenormalizedFieldsWithNavigatorName" Value="true" />
+      </Settings>
+      <CodeGenerationCyclePreferences OutputType="3">
+        <LastUsedPreferences>
+          <DestinationRootFolder Value=".\" />
+          <FrameworkName Value="DTO Class Model" />
+          <LanguageName Value="C#" />
+          <PlatformName Value=".NET Standard 2.0" />
+          <PresetName Value="SD.DTOClasses.ReadOnlyDTOs" />
+          <RootNamespace Value="JwtSecurityContracts" />
+          <TemplateGroup Value="General" />
+          <TemplateBindings>
+            <Binding Name="SD.DTOClassModel.NETStandard20" />
+            <Binding Name="SD.DTOClassModel" />
+            <Binding Name="SD.TemplateBindings.General" />
+          </TemplateBindings>
+        </LastUsedPreferences>
+      </CodeGenerationCyclePreferences>
+      <Documents>
+        <Document Name="ApiClientDto">
+          <RootEntity Entity=":ApiClient" />
+          <Fields>
+            <Field Name="ClientId">
+              <EntityField Name="ClientId" />
+            </Field>
+            <Field Name="ClientName">
+              <EntityField Name="ClientName" />
+            </Field>
+            <Field Name="ClientSecret">
+              <EntityField Name="ClientSecret" />
+            </Field>
+            <Field Name="RefreshTokenLifetimeMinutes">
+              <EntityField Name="RefreshTokenLifetimeMinutes" />
+            </Field>
+            <Field Name="TokenLifetimeMinutes">
+              <EntityField Name="TokenLifetimeMinutes" />
+            </Field>
+          </Fields>
+        </Document>
+        <Document Name="RoleDto">
+          <RootEntity Entity=":Role" />
+          <Fields>
+            <Field Name="RoleId">
+              <EntityField Name="RoleId" />
+            </Field>
+            <Field Name="RoleName">
+              <EntityField Name="RoleName" />
+            </Field>
+          </Fields>
+        </Document>
+        <Document Name="UserDto">
+          <RootEntity Entity=":User" />
+          <Fields>
+            <Field Name="PasswordHash">
+              <EntityField Name="PasswordHash" />
+            </Field>
+            <Field Name="Salt">
+              <EntityField Name="Salt" />
+            </Field>
+            <Field Name="UserEmail">
+              <EntityField Name="UserEmail" />
+            </Field>
+            <Field Name="UserId">
+              <EntityField Name="UserId" />
+            </Field>
+            <Field Name="UserRoles">
+              <Document Name="UserRole">
+                <RootEntity Entity=":UserRole" NavigatorPath="UserRoles" />
+                <Fields>
+                  <Field Name="Role">
+                    <Document Name="Role">
+                      <RootEntity Entity=":Role" NavigatorPath="UserRoles,Role" />
+                      <Fields>
+                        <Field Name="RoleId">
+                          <EntityField Name="RoleId" />
+                        </Field>
+                        <Field Name="RoleName">
+                          <EntityField Name="RoleName" />
+                        </Field>
+                      </Fields>
+                    </Document>
+                  </Field>
+                </Fields>
+              </Document>
+            </Field>
+          </Fields>
+        </Document>
+      </Documents>
+    </DerivedModel>
+  </DerivedModels>
+</Project>

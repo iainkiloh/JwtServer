@@ -1,0 +1,1521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--LLBLGen Pro v5.4 project file. Do not manually edit this file. Incorrect references could lead to an unloadable project file.-->
+<Project Version="5.4" TargetFrameworkName="LLBLGen Pro Runtime Framework" UseLegacyDefaults="false">
+  <Properties>
+    <Abbreviations />
+    <Property Name="AdditionalTaskPerformerFolder" Value="" />
+    <Property Name="AdditionalTasksFolder" Value="" />
+    <Property Name="AdditionalTemplatesFolder" Value="" />
+    <Property Name="AdditionalTypeConverterFolder" Value="" />
+    <Property Name="AddNewElementsAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AddNewFieldsAfterRefresh_v5" Value="true" />
+    <Property Name="AddNewFieldsAfterRelationalModelDataSync_v5" Value="true" />
+    <Property Name="AddNewViewsAsEntitiesAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewViewsAsEntitiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AutoAddManyToManyRelationships" Value="false" />
+    <Property Name="AutoAssignSequencesToIntegerPks" Value="true" />
+    <Property Name="AutoAssignTypeConverterToFieldMapping" Value="true" />
+    <Property Name="ConnectionStringKeyNamePattern" Value="CommonDbConn" />
+    <Property Name="DefaultDeleteRuleAction" Value="1" />
+    <Property Name="DefaultUpdateRuleAction" Value="0" />
+    <Property Name="EncodingToUse" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForTable" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForView" Value="4" />
+    <Property Name="EntityFieldNameStripPattern" Value="{}{}" />
+    <Property Name="EntityNameStripPattern" Value="{tbl_}{}" />
+    <Property Name="ExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="FailCodeGenerationOnWriteError" Value="false" />
+    <Property Name="FieldMappedOntoRelatedFieldPattern" Value="{$RelatedFieldName}" />
+    <Property Name="FkFieldsAreNamedAfterTargetField" Value="true" />
+    <Property Name="ForeignKeyConstraintPattern" Value="FK_{$Guid}" />
+    <Property Name="ForeignKeyFieldPattern" Value="{$NavigatorName}{$RelatedFieldName}" />
+    <Property Name="GroupUsage" Value="0" />
+    <Property Name="IdentifyingFieldsFollowDBPrimaryKeyConstraints_v5" Value="true" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseInsensitiveDBs" Value="false" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseSensitiveDBs" Value="false" />
+    <Property Name="LengthPrecisionScaleFollowDBLengthPrecisionScale_v5" Value="true" />
+    <Property Name="MakeElementNamePascalCasing" Value="true" />
+    <Property Name="NavigatorMappedOntoManyToManyPattern" Value="{$EndEntityName}CollectionVia{$IntermediateEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneManyToOnePattern" Value="{$EndEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneToManyPattern" Value="{$EndEntityName$P}" />
+    <Property Name="NonExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="PreferDecimalOverCurrencyTypes" Value="true" />
+    <Property Name="PreferNaturalCharacterTypes" Value="true" />
+    <Property Name="PreferSystemSequencesOverSchemaSequencesIfApplicable" Value="true" />
+    <Property Name="PreferVariableLengthTypes" Value="true" />
+    <Property Name="PrimaryKeyConstraintPattern" Value="PK_{$Guid}" />
+    <Property Name="ProjectCreator" Value="King Kiloh Top Dog" />
+    <Property Name="ProjectName" Value="ShipSureCommon" />
+    <Property Name="ReflectNullabilityOfElementFieldInTargetField_v5" Value="false" />
+    <Property Name="ReflectTypeOfElementFieldInTargetField_v5" Value="true" />
+    <Property Name="RelationalModelDataElementNameCasingCaseInsensitiveDBs" Value="3" />
+    <Property Name="RelationalModelDataElementNameCasingCaseSensitiveDBs" Value="3" />
+    <Property Name="RelationshipsFollowDBForeignKeyConstraints_v5" Value="true" />
+    <Property Name="RemoveUnderscoresFromElementName" Value="true" />
+    <Property Name="RemoveUnmappedElementsAfterRefresh_v5" Value="false" />
+    <Property Name="RemoveUnmappedElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRefresh" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRelationalModelDataSync" Value="false" />
+    <Property Name="RetrieveDBCustomProperties" Value="false" />
+    <Property Name="RootNamespace" Value="" />
+    <Property Name="SequenceNameMatchingPattern" Value="SEQ_{$TableName}" />
+    <Property Name="SequencePattern" Value="SEQ_{$EntityName}" />
+    <Property Name="SetGroupNameAfterSchemaName" Value="true" />
+    <Property Name="SetSchemaNameAfterGroupName" Value="true" />
+    <Property Name="SingularizeElementNames" Value="true" />
+    <Property Name="StoredProcNameStripPattern" Value="{pr_, sp_}{}" />
+    <Property Name="StoreTimeLastGeneratedIntoProject" Value="false" />
+    <Property Name="StoreTimeLastSyncIntoProject" Value="true" />
+    <Property Name="SyncMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="SyncRelationalModelDataElementNameWithModelElementName_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="TableValuedFunctionNameStripPattern" Value="{fn_, pr_, sp_}{}" />
+    <Property Name="TargetPerEntityEdgesRequireBackingFkConstraint" Value="true" />
+    <Property Name="TypedViewFieldNameStripPattern" Value="{}{}" />
+    <Property Name="TypedViewMappedOnResultsetPattern" Value="{$ProcFunctionName}{$ResultsetName}Result" />
+    <Property Name="TypedViewNameStripPattern" Value="{vw_}{}" />
+    <Property Name="UniqueConstraintPattern" Value="UC_{$Guid}" />
+    <Property Name="UniqueConstraintsFollowDBUniqueConstraints_v5" Value="true" />
+    <Property Name="UpdateCustomPropertiesAfterRefresh_v5" Value="false" />
+    <Property Name="UpdateCustomPropertiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="UseCustomFieldOrderingOnNewElements" Value="false" />
+  </Properties>
+  <TypeShortcuts />
+  <IgnoredWarnings />
+  <SavedSearchQueries />
+  <CodeGenerationCyclePreferences>
+    <OutputType Value="3">
+      <LastUsedPreferences>
+        <DestinationRootFolder Value=".\" />
+        <FrameworkName Value="LLBLGen Pro Runtime Framework" />
+        <LanguageName Value="C#" />
+        <PlatformName Value=".NET Standard 2.0" />
+        <PresetName Value="SD.Presets.Adapter.General.Netstandard" />
+        <RootNamespace Value="ShipSureCommon" />
+        <TemplateGroup Value="Adapter" />
+        <TemplateBindings>
+          <Binding Name="SD.TemplateBindings.SharedTemplates.Netstandard20" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates" />
+          <Binding Name="SD.TemplateBindings.SqlServerSpecific" />
+          <Binding Name="Custom.TemplateBindings.SharedTemplates" />
+          <Binding Name="SD.TemplateBindings.General" />
+        </TemplateBindings>
+      </LastUsedPreferences>
+    </OutputType>
+  </CodeGenerationCyclePreferences>
+  <OutputSettingValues>
+    <SettingValues>
+      <SettingValue Name="1:AdapterDbGenericSubFolderName" Value="DatabaseGeneric" Type="18" />
+      <SettingValue Name="1:AdapterDbSpecificNamespaceSuffix" Value="DatabaseSpecific" Type="18" />
+      <SettingValue Name="1:AdapterDbSpecificProjectFileSuffix" Value="DBSpecific" Type="18" />
+      <SettingValue Name="1:AdapterDbSpecificSubFolderName" Value="DatabaseSpecific" Type="18" />
+      <SettingValue Name="1:ConvertNulledReferenceTypesToDefaultValue" Value="true" Type="3" />
+      <SettingValue Name="1:EntityBaseClassNameDefault" Value="CommonEntityBase" Type="18" />
+      <SettingValue Name="1:FieldPropertyIsPublicDefault" Value="true" Type="3" />
+      <SettingValue Name="1:GenerateAsNullableTypeDefault" Value="true" Type="3" />
+      <SettingValue Name="1:GenerateEntityFieldFactory" Value="false" Type="3" />
+      <SettingValue Name="1:GenerateEntityFieldsFactory" Value="false" Type="3" />
+      <SettingValue Name="1:InlineValueTypedFields" Value="true" Type="3" />
+      <SettingValue Name="1:LazyLoadingWithoutResultReturnsNew" Value="false" Type="3" />
+      <SettingValue Name="1:NavigatorPropertyIsPublicDefault" Value="true" Type="3" />
+      <SettingValue Name="1:SupportedActionCombinations" Value="0,1,2,3,4,5,6,7" Type="18" />
+      <SettingValue Name="1:TdlEmitTimeDateInOutputFiles" Value="false" Type="3" />
+      <SettingValue Name="1:TypedListOutputTypeDefault" Value="PocoWithQuerySpecQuery" Type="18" />
+      <SettingValue Name="1:TypedViewOutputTypeDefault" Value="PocoWithQuerySpecQuery" Type="18" />
+    </SettingValues>
+  </OutputSettingValues>
+  <CodeGenerationMetaDataDefaults>
+    <TargetElement Type="256">
+      <Defaults>
+        <Attributes>
+          <Attribute Value="Browsable($false)" />
+        </Attributes>
+      </Defaults>
+    </TargetElement>
+  </CodeGenerationMetaDataDefaults>
+  <EntityModel>
+    <ValueTypeDefinitions />
+    <EntityDefinitions>
+      <EntityDefinition Name="ApiClient" ObjectID="6fbb975b-dc82-4c38-8a3e-17094b0a7def">
+        <Fields>
+          <Field Name="AccessCodeLifeTime" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Active" Type="bool" />
+          <Field Name="AllowedOrigin" Type="string" MaxLength="350" />
+          <Field Name="ClientId" Type="string" MaxLength="150" IsPrimaryKey="true" />
+          <Field Name="ClientName" Type="string" MaxLength="150" />
+          <Field Name="ClientSecret" Type="string" MaxLength="150" />
+          <Field Name="CredentialCheckFrequency" Type="int" Precision="10" />
+          <Field Name="RedirectUri" Type="string" IsOptional="true" MaxLength="350" />
+          <Field Name="RefreshTokenLifetime" Type="int" Precision="10" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="TokenLifeTime" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="UseClientSecret" Type="bool" IsOptional="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="CounterPkExample" ObjectID="b73c1796-091a-4889-aa4a-57ff370308e0">
+        <Fields>
+          <Field Name="CpeCreatedBy" Type="string" MaxLength="20" />
+          <Field Name="CpeCreatedOn" Type="datetime" />
+          <Field Name="CpeId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="CpeInt" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="CpeText" Type="string" IsOptional="true" MaxLength="2147483647" />
+          <Field Name="CpeUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="CpeUpdatedOn" Type="datetime" />
+          <Field Name="Rowguid" Type="guid" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Fleet" ObjectID="5cf0e0d5-33d7-43f4-a026-f703567a1e65">
+        <Fields>
+          <Field Name="DepId" Type="string" IsOptional="true" MaxLength="6" />
+          <Field Name="FltActive" Type="bool" />
+          <Field Name="FltDesc" Type="string" MaxLength="60" />
+          <Field Name="FltId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="FltType" Type="string" IsOptional="true" MaxLength="1" />
+          <Field Name="FltUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="FltUpdatedOn" Type="datetime" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="SitId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="UsrId" Type="string" IsOptional="true" MaxLength="20" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="FleetType" ObjectID="9be79a43-be3b-4e65-89c9-5a1e96991627">
+        <Fields>
+          <Field Name="FtyDescription" Type="string" MaxLength="30" />
+          <Field Name="FtyId" Type="string" MaxLength="1" IsPrimaryKey="true" />
+          <Field Name="FtyUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="FtyUpdatedOn" Type="datetime" />
+          <Field Name="Rowguid" Type="guid" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Fltvess" ObjectID="25784fe7-4a12-486c-8b48-48bb12752147">
+        <Fields>
+          <Field Name="CoyId" Type="string" IsOptional="true" MaxLength="4" />
+          <Field Name="FltId" Type="string" MaxLength="12" />
+          <Field Name="FlvId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="FlvUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="FlvUpdatedOn" Type="datetime" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="UftId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesId" Type="string" MaxLength="12" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Secrole" ObjectID="9feae4c3-0d8e-41a0-b3a8-20393df49857">
+        <Fields>
+          <Field Name="ApplicableForVessel" Type="bool" IsOptional="true" />
+          <Field Name="CreatedBy" Type="string" MaxLength="20" />
+          <Field Name="CreatedOn" Type="datetime" />
+          <Field Name="DefaultRoleForVessel" Type="bool" IsOptional="true" />
+          <Field Name="IsDeleted" Type="bool" IsOptional="true" />
+          <Field Name="RoleId" Type="guid" />
+          <Field Name="RoleIdentifier" Type="string" MaxLength="20" IsPrimaryKey="true" />
+          <Field Name="RoleName" Type="string" MaxLength="100" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="StartupModuleIdentifier" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UpdatedBy" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UpdatedOn" Type="datetime" IsOptional="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="SecuserRole" ObjectID="1a203adb-ab61-4cc4-9447-1a437f0abb9c">
+        <Fields>
+          <Field Name="CreatedBy" Type="string" MaxLength="20" />
+          <Field Name="CreatedOn" Type="datetime" />
+          <Field Name="IsPrimaryRole" Type="bool" />
+          <Field Name="RoleId" Type="guid" />
+          <Field Name="RoleIdentifier" Type="string" MaxLength="20" IsPrimaryKey="true" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="UpdatedBy" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UpdatedOn" Type="datetime" IsOptional="true" />
+          <Field Name="UsrId" Type="string" MaxLength="20" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Userfleet" ObjectID="6b401591-6975-42ad-87f3-247c9b425a50">
+        <Fields>
+          <Field Name="FltId" Type="string" MaxLength="12" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="UftId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="UftUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="UftUpdatedOn" Type="datetime" />
+          <Field Name="UsrId" Type="string" MaxLength="20" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Userid" ObjectID="f6363c6d-af3a-407d-b5fe-efc1145e03a3">
+        <Fields>
+          <Field Name="CrwId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="DepId" Type="string" IsOptional="true" MaxLength="6" />
+          <Field Name="FltId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="SitId" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="SitLocCode" Type="string" IsOptional="true" MaxLength="4" />
+          <Field Name="UsrBussNo1" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="UsrBussNo2" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="UsrDefaultCmp" Type="string" IsOptional="true" MaxLength="4" />
+          <Field Name="UsrDeleted" Type="bool" />
+          <Field Name="UsrDisplayName" Type="string" MaxLength="50" />
+          <Field Name="UsrEmail" Type="string" IsOptional="true" MaxLength="100" />
+          <Field Name="UsrFaxNo1" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="UsrForename" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="UsrHomeNo1" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="UsrHomeNo2" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="UsrId" Type="string" MaxLength="20" IsPrimaryKey="true" />
+          <Field Name="UsrInetViewer" Type="string" IsOptional="true" MaxLength="5" />
+          <Field Name="UsrLoginid" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UsrMobileNo1" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="UsrNewId" Type="bool" />
+          <Field Name="UsrOffice" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="UsrPassword" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UsrPcn" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UsrProfType" Type="string" MaxLength="5" />
+          <Field Name="UsrSecAdmin" Type="byte" Precision="3" />
+          <Field Name="UsrSecEqu" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UsrSurname" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="UsrTitle" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="UsrUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="UsrUpdatedOn" Type="datetime" />
+          <Field Name="VesOwnerGrp" Type="string" IsOptional="true" MaxLength="12" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Vesmanagementdetail" ObjectID="dfb9a068-1471-4b92-a30f-defa27592dd9">
+        <Fields>
+          <Field Name="CmpId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="CoyId" Type="string" IsOptional="true" MaxLength="4" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="VesId" Type="string" MaxLength="12" />
+          <Field Name="VmdAcctEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VmdAcctStart" Type="datetime" IsOptional="true" />
+          <Field Name="VmdAlternativeCode" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VmdAltInvAddress" Type="bool" IsOptional="true" />
+          <Field Name="VmdAuthClientLevel" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuthLevel1" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuthLevel2" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuthLevel3" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuthMinOrderLevel" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuthOfficeLimit" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuthVesselLimit" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VmdAuxcode" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VmdBenOwner" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VmdContractCompany" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VmdCreatedBy" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VmdCreatedOn" Type="datetime" IsOptional="true" />
+          <Field Name="VmdId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="VmdManageEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VmdManageStart" Type="datetime" IsOptional="true" />
+          <Field Name="VmdManEstdateEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VmdManEstdateStart" Type="datetime" IsOptional="true" />
+          <Field Name="VmdOwner" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VmdPurchEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VmdPurchStart" Type="datetime" IsOptional="true" />
+          <Field Name="VmdRegOwner" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VmdUpdatedBy" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VmdUpdatedOn" Type="datetime" IsOptional="true" />
+          <Field Name="VmdVesselName" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="VmoId" Type="string" MaxLength="12" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Vesrespservice" ObjectID="3dfa9d48-a5ed-4363-abce-a6a9c66fe562">
+        <Fields>
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="UsrId" Type="string" MaxLength="20" />
+          <Field Name="VmdId" Type="string" MaxLength="12" />
+          <Field Name="VrsDeleted" Type="bool" IsOptional="true" />
+          <Field Name="VrsId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="VrsKeyContact" Type="bool" IsOptional="true" />
+          <Field Name="VrsUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="VrsUpdatedOn" Type="datetime" />
+          <Field Name="VrtId" Type="string" MaxLength="12" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Vessel" ObjectID="ffa0e96d-090b-4c9a-9aad-346a3b9d2d81">
+        <Fields>
+          <Field Name="CmpId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="LogbookStatusChangedBy" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="LogbookStatusChangedOn" Type="datetime" IsOptional="true" />
+          <Field Name="LstId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="MetId" Type="string" IsOptional="true" MaxLength="2" />
+          <Field Name="OceId" Type="string" IsOptional="true" MaxLength="6" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="VdgId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesAcc" Type="byte" IsOptional="true" Precision="3" />
+          <Field Name="VesAcoRefNo" Type="short" IsOptional="true" Precision="5" />
+          <Field Name="VesBeneowner" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesBreadthExtreme" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesBreadthMoulded" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesCallSign" Type="string" IsOptional="true" MaxLength="10" />
+          <Field Name="VesChartCode" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VesCheng" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="VesChengOff" Type="datetime" IsOptional="true" />
+          <Field Name="VesClass" Type="string" IsOptional="true" MaxLength="300" />
+          <Field Name="VesClassId" Type="string" IsOptional="true" MaxLength="15" />
+          <Field Name="VesClassSociety" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesCmpType" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VesCofrexpDate" Type="datetime" IsOptional="true" />
+          <Field Name="VesCompanyId" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="VesContAcc" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VesContCrew" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VesContOps" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VesContPrch" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VesContTech" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VesConversion" Type="byte" Precision="3" />
+          <Field Name="VesConversionDate" Type="datetime" IsOptional="true" />
+          <Field Name="VesCountFit" Type="byte" Precision="3" />
+          <Field Name="VesCrew" Type="byte" IsOptional="true" Precision="3" />
+          <Field Name="VesDateBuilt" Type="datetime" IsOptional="true" />
+          <Field Name="VesDepthExtreme" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesDesPerson" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesDgConsump" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesDualClass" Type="bool" IsOptional="true" />
+          <Field Name="VesFh" Type="byte" Precision="3" />
+          <Field Name="VesFlag" Type="string" MaxLength="4" />
+          <Field Name="VesFleet" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VesFleetMan" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="VesFwdistilled" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesFwfeed" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesFwpotable" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesGeneralType" Type="string" IsOptional="true" MaxLength="2" />
+          <Field Name="VesGroup" Type="string" IsOptional="true" MaxLength="8" />
+          <Field Name="VesHeadOff" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesHideCrew" Type="bool" />
+          <Field Name="VesId" Type="string" MaxLength="12" IsPrimaryKey="true" />
+          <Field Name="VesImonumber" Type="string" IsOptional="true" MaxLength="8" />
+          <Field Name="VesInsur" Type="byte" Precision="3" />
+          <Field Name="VesIntGrossTon" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesIntNetTon" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesJustifyExpend" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VesKeelLaid" Type="datetime" IsOptional="true" />
+          <Field Name="VesLastDryDock" Type="datetime" IsOptional="true" />
+          <Field Name="VesLbp" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesLightDisplacement" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesLightweight" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesLoa" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesLocCode" Type="string" IsOptional="true" MaxLength="4" />
+          <Field Name="VesLocEnd" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="VesLocEstend" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="VesLocEststart" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="VesLocStart" Type="string" IsOptional="true" MaxLength="30" />
+          <Field Name="VesManageEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VesManageStart" Type="datetime" IsOptional="true" />
+          <Field Name="VesManEstdateEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VesManEstdateStart" Type="datetime" IsOptional="true" />
+          <Field Name="VesManPrch" Type="string" IsOptional="true" MaxLength="20" />
+          <Field Name="VesMaster" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="VesMasterOff" Type="datetime" IsOptional="true" />
+          <Field Name="VesMeConsump" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesName" Type="string" MaxLength="60" />
+          <Field Name="VesNewHull" Type="string" IsOptional="true" MaxLength="10" />
+          <Field Name="VesNewLightDisplacement" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewLightweight" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewNormalDisplacement" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewNormalDwt" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewSumDisplacement" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewSumDwt" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewTropDisplacement" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewTropDwt" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewWintDisplacement" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNewWintDwt" Type="decimal" IsOptional="true" Precision="18" Scale="2" />
+          <Field Name="VesNextDryDock" Type="datetime" IsOptional="true" />
+          <Field Name="VesNormalDisplacement" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesNormalDraft" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesNormalDwt" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesOceanAreaDate" Type="datetime" IsOptional="true" />
+          <Field Name="VesOffAcc" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffCrew" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffFh" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOfficialNo" Type="string" IsOptional="true" MaxLength="10" />
+          <Field Name="VesOffInsur" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffOps" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffPostFix" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffPrch" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffTech" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOffthirdparty" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOnboard" Type="bool" />
+          <Field Name="VesOnboard2" Type="int" Precision="10" />
+          <Field Name="VesOps" Type="byte" IsOptional="true" Precision="3" />
+          <Field Name="VesOwnerGrp" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesOwnerVessCode" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesPanamaGrossTon" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesPanamaNetTon" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesPiclub" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesPitch" Type="string" IsOptional="true" MaxLength="1" />
+          <Field Name="VesPortRegId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesPostFix" Type="byte" Precision="3" />
+          <Field Name="VesPrch" Type="byte" IsOptional="true" Precision="3" />
+          <Field Name="VesPrevFlag" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesPrevManager" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VesPrevOwner" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VesPropPitch" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesQualIndivId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesRegowner" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesRepName" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="VesRespContrId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesRespOff" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesRestricted" Type="bool" IsOptional="true" />
+          <Field Name="VesRunCostEnd" Type="datetime" IsOptional="true" />
+          <Field Name="VesRunCostStart" Type="datetime" IsOptional="true" />
+          <Field Name="VesSecondClassId" Type="string" IsOptional="true" MaxLength="15" />
+          <Field Name="VesSecondClassSociety" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesSepComments" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VesSepStatus" Type="string" IsOptional="true" MaxLength="3" />
+          <Field Name="VesShortName" Type="string" IsOptional="true" MaxLength="6" />
+          <Field Name="VesSpillManId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VesSuezGrossTon" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesSuezNetTon" Type="single" IsOptional="true" Precision="24" />
+          <Field Name="VesSumDisplacement" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesSumDraft" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesSumDwt" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesTech" Type="byte" IsOptional="true" Precision="3" />
+          <Field Name="VesThirdparty" Type="byte" IsOptional="true" Precision="3" />
+          <Field Name="VesTropDisplacement" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesTropDraft" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesTropDwt" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="VesUpdatedOn" Type="datetime" />
+          <Field Name="VesUscgexpDate" Type="datetime" IsOptional="true" />
+          <Field Name="VesVoyCounter" Type="decimal" IsOptional="true" Precision="4" />
+          <Field Name="VesVships" Type="bool" />
+          <Field Name="VesWintDisplacement" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesWintDraft" Type="double" IsOptional="true" Precision="38" />
+          <Field Name="VesWintDwt" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VesYardBuiltId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VhtId" Type="string" IsOptional="true" MaxLength="8" />
+          <Field Name="VmoId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VssId" Type="string" MaxLength="2" />
+          <Field Name="VtyId" Type="string" MaxLength="6" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Vestype" ObjectID="b1c3138d-efc2-4eca-be78-fda9e8a29030">
+        <Fields>
+          <Field Name="CsrId" Type="string" IsOptional="true" MaxLength="2" />
+          <Field Name="Rowguid" Type="guid" />
+          <Field Name="StcId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VggId" Type="string" IsOptional="true" MaxLength="6" />
+          <Field Name="VtgId" Type="string" IsOptional="true" MaxLength="12" />
+          <Field Name="VtyDeleted" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="VtyDesc" Type="string" IsOptional="true" MaxLength="60" />
+          <Field Name="VtyGenType" Type="string" IsOptional="true" MaxLength="2" />
+          <Field Name="VtyId" Type="string" MaxLength="6" IsPrimaryKey="true" />
+          <Field Name="VtyIscontainer" Type="bool" />
+          <Field Name="VtyShortdesc" Type="string" IsOptional="true" MaxLength="10" />
+          <Field Name="VtyUpdatedBy" Type="string" MaxLength="20" />
+          <Field Name="VtyUpdatedOn" Type="datetime" />
+          <Field Name="VwgId" Type="string" IsOptional="true" MaxLength="12" />
+        </Fields>
+      </EntityDefinition>
+    </EntityDefinitions>
+    <Relationships>
+      <NormalRelationship Name="Fleet.Userid-Userid.Fleets" Start=":Fleet" End=":Userid" StartNavigator="Userid" EndNavigator="Fleets" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="UsrId" PkField="UsrId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Fltvess.Fleet-Fleet.Fltvesses" Start=":Fltvess" End=":Fleet" StartNavigator="Fleet" EndNavigator="Fltvesses" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="FltId" PkField="FltId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Fltvess.Vessel-Vessel.Fltvesses" Start=":Fltvess" End=":Vessel" StartNavigator="Vessel" EndNavigator="Fltvesses" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="VesId" PkField="VesId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Userfleet.Fleet-Fleet.Userfleets" Start=":Userfleet" End=":Fleet" StartNavigator="Fleet" EndNavigator="Userfleets" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="FltId" PkField="FltId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Userfleet.Userid-Userid.Userfleets" Start=":Userfleet" End=":Userid" StartNavigator="Userid" EndNavigator="Userfleets" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="UsrId" PkField="UsrId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Userid.Fleet-Fleet.Userids" Start=":Userid" End=":Fleet" StartNavigator="Fleet" EndNavigator="Userids" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="FltId" PkField="FltId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Vesmanagementdetail.Vessel-Vessel.Vesmanagementdetails" Start=":Vesmanagementdetail" End=":Vessel" StartNavigator="Vessel" EndNavigator="Vesmanagementdetails" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="VesId" PkField="VesId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Vesrespservice.Vesmanagementdetail-Vesmanagementdetail.Vesrespservices" Start=":Vesrespservice" End=":Vesmanagementdetail" StartNavigator="Vesmanagementdetail" EndNavigator="Vesrespservices" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="VmdId" PkField="VmdId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Vessel.Vestype-Vestype.Vessels" Start=":Vessel" End=":Vestype" StartNavigator="Vestype" EndNavigator="Vessels" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="VtyId" PkField="VtyId" />
+        </FieldRelationships>
+      </NormalRelationship>
+    </Relationships>
+    <InheritanceHierarchies />
+  </EntityModel>
+  <SPCallDefinitions>
+    <SPCallDefinition Name="GeneratePrimaryKey" ObjectID="b26dc6bc-b44e-4925-9f06-d79f266f2d06">
+      <Parameters>
+        <Parameter Name="SId" Type="string" MaxLength="12" Direction="3" />
+        <Parameter Name="STableName" Type="string" MaxLength="50" />
+      </Parameters>
+    </SPCallDefinition>
+  </SPCallDefinitions>
+  <TargetDatabases>
+    <TargetDatabase Type="2D18D138-1DD2-467E-86CC-4838250611AE" SyncSource="2">
+      <ConnectionElements>
+        <ConnectionElement Name="ServerName" Value="srv-glas902" />
+        <ConnectionElement Name="CatalogName" Value="master" />
+        <ConnectionElement Name="UserID" Value="ServiceUser" />
+        <ConnectionElement Name="Password" Value="" />
+      </ConnectionElements>
+      <SystemSequences>
+        <Sequence Name="SCOPE_IDENTITY()" />
+        <Sequence Name="@@IDENTITY" />
+      </SystemSequences>
+      <Catalogs>
+        <Catalog Name="Shipsure">
+          <Schemas>
+            <Schema Name="dbo" SyncSource="2" LastSyncWithDatabase="2019-05-14T09:17:26.3179866Z">
+              <Tables>
+                <Table Name="ApiClient">
+                  <PkConstraintName Name="PK_ApiClient" />
+                  <Fields>
+                    <Field Name="ClientId" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="150" />
+                    <Field Name="ClientName" Ordinal="2" DbType="24" Length="150" />
+                    <Field Name="ClientSecret" Ordinal="3" DbType="24" Length="150" />
+                    <Field Name="Active" Ordinal="4" DbType="2" />
+                    <Field Name="RefreshTokenLifetime" Ordinal="5" DbType="8" Precision="10" />
+                    <Field Name="AllowedOrigin" Ordinal="6" DbType="24" Length="350" />
+                    <Field Name="RedirectUri" Ordinal="7" IsOptional="true" DbType="24" Length="350" />
+                    <Field Name="UseClientSecret" Ordinal="8" IsOptional="true" DbType="2" />
+                    <Field Name="CredentialCheckFrequency" Ordinal="9" DbType="8" Precision="10" />
+                    <Field Name="rowguid" Ordinal="10" IsRowGUID="true" DbType="25" />
+                    <Field Name="TokenLifeTime" Ordinal="11" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="AccessCodeLifeTime" Ordinal="12" IsOptional="true" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="CounterPKExample">
+                  <PkConstraintName Name="PK_CounterPKExample" />
+                  <Fields>
+                    <Field Name="CPE_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="CPE_INT" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="CPE_TEXT" Ordinal="3" IsOptional="true" DbType="20" Length="2147483647" />
+                    <Field Name="CPE_CreatedBy" Ordinal="4" DbType="24" Length="20" />
+                    <Field Name="CPE_CreatedOn" Ordinal="5" DbType="4" />
+                    <Field Name="CPE_UpdatedBy" Ordinal="6" DbType="24" Length="20" />
+                    <Field Name="CPE_UpdatedOn" Ordinal="7" DbType="4" />
+                    <Field Name="rowguid" Ordinal="8" IsRowGUID="true" DbType="25" />
+                  </Fields>
+                </Table>
+                <Table Name="FLEET">
+                  <PkConstraintName Name="PK__FLEET__198AD3B0" />
+                  <Fields>
+                    <Field Name="FLT_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="FLT_Desc" Ordinal="2" DbType="24" Length="60" />
+                    <Field Name="USR_ID" Ordinal="3" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="DEP_ID" Ordinal="4" IsOptional="true" DbType="24" Length="6" />
+                    <Field Name="FLT_Type" Ordinal="5" IsOptional="true" DbType="3" Length="1" />
+                    <Field Name="FLT_UpdatedOn" Ordinal="6" DbType="4" />
+                    <Field Name="FLT_UpdatedBy" Ordinal="7" DbType="24" Length="20" />
+                    <Field Name="rowguid" Ordinal="8" IsRowGUID="true" DbType="25" />
+                    <Field Name="SIT_ID" Ordinal="9" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="FLT_ACTIVE" Ordinal="10" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="FleetTypes">
+                  <PkConstraintName Name="PK_FleetTypes" />
+                  <Fields>
+                    <Field Name="FTY_ID" Ordinal="1" IsPrimaryKey="true" DbType="3" Length="1" />
+                    <Field Name="FTY_Description" Ordinal="2" DbType="24" Length="30" />
+                    <Field Name="FTY_UpdatedOn" Ordinal="3" DbType="4" />
+                    <Field Name="FTY_UpdatedBy" Ordinal="4" DbType="24" Length="20" />
+                    <Field Name="rowguid" Ordinal="5" IsRowGUID="true" DbType="25" />
+                  </Fields>
+                </Table>
+                <Table Name="FLTVESS">
+                  <PkConstraintName Name="PK_FLTVESS" />
+                  <Fields>
+                    <Field Name="FLT_ID" Ordinal="1" DbType="24" Length="12" />
+                    <Field Name="VES_ID" Ordinal="2" DbType="24" Length="12" />
+                    <Field Name="FLV_ID" Ordinal="3" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="FLV_UpdatedOn" Ordinal="4" DbType="4" />
+                    <Field Name="FLV_UpdatedBy" Ordinal="5" DbType="24" Length="20" />
+                    <Field Name="rowguid" Ordinal="6" IsRowGUID="true" DbType="25" />
+                    <Field Name="UFT_ID" Ordinal="7" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="COY_ID" Ordinal="8" IsOptional="true" DbType="24" Length="4" />
+                  </Fields>
+                </Table>
+                <Table Name="SECRole">
+                  <PkConstraintName Name="PK_SecRole" />
+                  <Fields>
+                    <Field Name="RoleId" Ordinal="1" DbType="25" />
+                    <Field Name="RoleName" Ordinal="2" DbType="24" Length="100" />
+                    <Field Name="CreatedBy" Ordinal="3" DbType="24" Length="20" />
+                    <Field Name="CreatedOn" Ordinal="4" DbType="4" />
+                    <Field Name="UpdatedBy" Ordinal="5" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="UpdatedOn" Ordinal="6" IsOptional="true" DbType="4" />
+                    <Field Name="RoleIdentifier" Ordinal="7" IsPrimaryKey="true" DbType="24" Length="20" />
+                    <Field Name="rowguid" Ordinal="8" IsRowGUID="true" DbType="25" />
+                    <Field Name="ApplicableForVessel" Ordinal="9" IsOptional="true" DbType="2" />
+                    <Field Name="DefaultRoleForVessel" Ordinal="10" IsOptional="true" DbType="2" />
+                    <Field Name="StartupModuleIdentifier" Ordinal="11" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="IsDeleted" Ordinal="12" IsOptional="true" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="SECUserRole">
+                  <PkConstraintName Name="PK_SECUserRole" />
+                  <Fields>
+                    <Field Name="USR_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="20" />
+                    <Field Name="RoleId" Ordinal="2" DbType="25" />
+                    <Field Name="CreatedOn" Ordinal="3" DbType="4" />
+                    <Field Name="CreatedBy" Ordinal="4" DbType="24" Length="20" />
+                    <Field Name="UpdatedOn" Ordinal="5" IsOptional="true" DbType="4" />
+                    <Field Name="UpdatedBy" Ordinal="6" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="RoleIdentifier" Ordinal="7" IsPrimaryKey="true" DbType="24" Length="20" />
+                    <Field Name="IsPrimaryRole" Ordinal="8" DbType="2" />
+                    <Field Name="rowguid" Ordinal="9" IsRowGUID="true" DbType="25" />
+                  </Fields>
+                </Table>
+                <Table Name="USERFLEET">
+                  <PkConstraintName Name="PK_USERFLEET" />
+                  <Fields>
+                    <Field Name="UFT_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="FLT_ID" Ordinal="2" DbType="24" Length="12" />
+                    <Field Name="USR_ID" Ordinal="3" DbType="24" Length="20" />
+                    <Field Name="UFT_UpdatedOn" Ordinal="4" DbType="4" />
+                    <Field Name="UFT_UpdatedBy" Ordinal="5" DbType="24" Length="20" />
+                    <Field Name="rowguid" Ordinal="6" IsRowGUID="true" DbType="25" />
+                  </Fields>
+                </Table>
+                <Table Name="USERID">
+                  <PkConstraintName Name="PK_USERID_USR_ID" />
+                  <Fields>
+                    <Field Name="USR_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="20" />
+                    <Field Name="FLT_ID" Ordinal="2" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="USR_Office" Ordinal="3" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="DEP_ID" Ordinal="4" IsOptional="true" DbType="24" Length="6" />
+                    <Field Name="USR_DisplayName" Ordinal="5" DbType="24" Length="50" />
+                    <Field Name="USR_Password" Ordinal="6" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="USR_SecEqu" Ordinal="7" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="USR_Forename" Ordinal="8" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="USR_Surname" Ordinal="9" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="USR_Title" Ordinal="10" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="USR_BussNo1" Ordinal="11" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="USR_BussNo2" Ordinal="12" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="USR_HomeNo1" Ordinal="13" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="USR_HomeNo2" Ordinal="14" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="USR_FaxNo1" Ordinal="15" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="USR_MobileNo1" Ordinal="16" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="USR_ProfType" Ordinal="17" DbType="24" Length="5" />
+                    <Field Name="USR_SecAdmin" Ordinal="18" DbType="22" Precision="3" />
+                    <Field Name="USR_UpdatedOn" Ordinal="19" DbType="4" />
+                    <Field Name="USR_UpdatedBy" Ordinal="20" DbType="24" Length="20" />
+                    <Field Name="USR_Email" Ordinal="21" IsOptional="true" DbType="24" Length="100" />
+                    <Field Name="USR_InetViewer" Ordinal="22" IsOptional="true" DbType="24" Length="5" />
+                    <Field Name="SIT_LocCode" Ordinal="23" IsOptional="true" DbType="24" Length="4" />
+                    <Field Name="rowguid" Ordinal="24" IsRowGUID="true" DbType="25" />
+                    <Field Name="CRW_ID" Ordinal="25" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="USR_DELETED" Ordinal="26" DbType="2" />
+                    <Field Name="USR_LOGINID" Ordinal="27" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="sit_id" Ordinal="28" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="USR_NEW_ID" Ordinal="29" DbType="2" />
+                    <Field Name="VES_OwnerGrp" Ordinal="30" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="USR_DefaultCMP" Ordinal="31" IsOptional="true" DbType="24" Length="4" />
+                    <Field Name="USR_PCN" Ordinal="32" IsOptional="true" DbType="24" Length="20" />
+                  </Fields>
+                </Table>
+                <Table Name="VESMANAGEMENTDETAILS">
+                  <PkConstraintName Name="PK__VESMANAG__3171DF1CB8754E8E" />
+                  <Fields>
+                    <Field Name="VMD_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="VES_ID" Ordinal="2" DbType="24" Length="12" />
+                    <Field Name="VMO_ID" Ordinal="3" DbType="24" Length="12" />
+                    <Field Name="VMD_ManageStart" Ordinal="4" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_ManageEnd" Ordinal="5" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_Owner" Ordinal="6" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VMD_BenOwner" Ordinal="7" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VMD_RegOwner" Ordinal="8" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="COY_ID" Ordinal="9" IsOptional="true" DbType="24" Length="4" />
+                    <Field Name="CMP_ID" Ordinal="10" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VMD_AUXCODE" Ordinal="11" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VMD_AlternativeCode" Ordinal="12" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VMD_AuthVesselLimit" Ordinal="13" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="VMD_AuthOfficeLimit" Ordinal="14" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="VMD_AuthLevel1" Ordinal="15" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="VMD_AuthLevel2" Ordinal="16" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="VMD_AuthLevel3" Ordinal="17" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="rowguid" Ordinal="18" IsRowGUID="true" DbType="25" />
+                    <Field Name="VMD_VesselName" Ordinal="19" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="VMD_AltInvAddress" Ordinal="20" IsOptional="true" DbType="2" />
+                    <Field Name="VMD_AuthMinOrderLevel" Ordinal="21" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="VMD_AuthClientLevel" Ordinal="22" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="VMD_AcctStart" Ordinal="23" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_AcctEnd" Ordinal="24" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_PurchStart" Ordinal="25" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_PurchEnd" Ordinal="26" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_ContractCompany" Ordinal="27" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VMD_CreatedOn" Ordinal="28" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_CreatedBy" Ordinal="29" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VMD_UpdatedOn" Ordinal="30" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_UpdatedBy" Ordinal="31" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VMD_ManESTDateEnd" Ordinal="32" IsOptional="true" DbType="4" />
+                    <Field Name="VMD_ManESTDateStart" Ordinal="33" IsOptional="true" DbType="4" />
+                  </Fields>
+                </Table>
+                <Table Name="VESRESPSERVICE">
+                  <PkConstraintName Name="PK__VESRESPS__17360889F2823478" />
+                  <Fields>
+                    <Field Name="VRS_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="VMD_ID" Ordinal="2" DbType="24" Length="12" />
+                    <Field Name="VRT_ID" Ordinal="3" DbType="24" Length="12" />
+                    <Field Name="USR_ID" Ordinal="4" DbType="24" Length="20" />
+                    <Field Name="VRS_Deleted" Ordinal="5" IsOptional="true" DbType="2" />
+                    <Field Name="VRS_UpdatedOn" Ordinal="6" DbType="4" />
+                    <Field Name="VRS_UpdatedBy" Ordinal="7" DbType="24" Length="20" />
+                    <Field Name="rowguid" Ordinal="8" IsRowGUID="true" DbType="25" />
+                    <Field Name="VRS_KeyContact" Ordinal="9" IsOptional="true" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="VESSEL">
+                  <PkConstraintName Name="PK__VESSEL__411C0422" />
+                  <Fields>
+                    <Field Name="VES_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="12" />
+                    <Field Name="VES_PortRegId" Ordinal="2" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_Group" Ordinal="3" IsOptional="true" DbType="24" Length="8" />
+                    <Field Name="MET_ID" Ordinal="4" IsOptional="true" DbType="24" Length="2" />
+                    <Field Name="VSS_ID" Ordinal="5" DbType="24" Length="2" />
+                    <Field Name="VTY_ID" Ordinal="6" DbType="24" Length="6" />
+                    <Field Name="VES_DG_Consump" Ordinal="7" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VHT_ID" Ordinal="8" IsOptional="true" DbType="24" Length="8" />
+                    <Field Name="CMP_ID" Ordinal="9" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_CompanyID" Ordinal="10" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="VES_ME_Consump" Ordinal="11" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_CmpType" Ordinal="12" IsOptional="true" DbType="24" Length="50" />
+                    <Field Name="VES_ChartCode" Ordinal="13" IsOptional="true" DbType="24" Length="50" />
+                    <Field Name="OCE_ID" Ordinal="14" IsOptional="true" DbType="24" Length="6" />
+                    <Field Name="VES_OceanAreaDate" Ordinal="15" IsOptional="true" DbType="4" />
+                    <Field Name="VES_Name" Ordinal="16" DbType="24" Length="60" />
+                    <Field Name="VES_Flag" Ordinal="17" DbType="24" Length="4" />
+                    <Field Name="VES_Acc" Ordinal="18" IsOptional="true" DbType="22" Precision="3" />
+                    <Field Name="VES_SumDWT" Ordinal="19" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_Crew" Ordinal="20" IsOptional="true" DbType="22" Precision="3" />
+                    <Field Name="VES_Prch" Ordinal="21" IsOptional="true" DbType="22" Precision="3" />
+                    <Field Name="VES_Fleet" Ordinal="22" IsOptional="true" DbType="24" Length="50" />
+                    <Field Name="VES_Ops" Ordinal="23" IsOptional="true" DbType="22" Precision="3" />
+                    <Field Name="VES_PostFix" Ordinal="24" DbType="22" Precision="3" />
+                    <Field Name="VES_Insur" Ordinal="25" DbType="22" Precision="3" />
+                    <Field Name="VES_Tech" Ordinal="26" IsOptional="true" DbType="22" Precision="3" />
+                    <Field Name="VES_FH" Ordinal="27" DbType="22" Precision="3" />
+                    <Field Name="VES_DesPerson" Ordinal="28" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_YardBuiltId" Ordinal="29" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_OffPostFix" Ordinal="30" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_OffFH" Ordinal="31" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_OffInsur" Ordinal="32" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_ManESTDateStart" Ordinal="33" IsOptional="true" DbType="4" />
+                    <Field Name="VES_LocESTStart" Ordinal="34" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="VES_ManageStart" Ordinal="35" IsOptional="true" DbType="4" />
+                    <Field Name="VES_LocStart" Ordinal="36" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="VES_OwnerGrp" Ordinal="37" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_LocESTEnd" Ordinal="38" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="VES_ManageEnd" Ordinal="39" IsOptional="true" DbType="4" />
+                    <Field Name="VES_LocEnd" Ordinal="40" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="VES_ShortName" Ordinal="41" IsOptional="true" DbType="24" Length="6" />
+                    <Field Name="VES_CallSign" Ordinal="42" IsOptional="true" DbType="24" Length="10" />
+                    <Field Name="VES_Class" Ordinal="43" IsOptional="true" DbType="24" Length="300" />
+                    <Field Name="VES_DateBuilt" Ordinal="44" IsOptional="true" DbType="4" />
+                    <Field Name="VES_NewHull" Ordinal="45" IsOptional="true" DbType="24" Length="10" />
+                    <Field Name="VES_KeelLaid" Ordinal="46" IsOptional="true" DbType="4" />
+                    <Field Name="VES_Conversion" Ordinal="47" DbType="22" Precision="3" />
+                    <Field Name="VES_ConversionDate" Ordinal="48" IsOptional="true" DbType="4" />
+                    <Field Name="VES_WintDWT" Ordinal="49" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_ManESTDateEnd" Ordinal="50" IsOptional="true" DbType="4" />
+                    <Field Name="VES_TropDWT" Ordinal="51" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_Lightweight" Ordinal="52" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_WintDraft" Ordinal="53" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_SumDraft" Ordinal="54" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_TropDraft" Ordinal="55" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_LastDryDock" Ordinal="56" IsOptional="true" DbType="4" />
+                    <Field Name="VES_NextDryDock" Ordinal="57" IsOptional="true" DbType="4" />
+                    <Field Name="VES_IntGrossTon" Ordinal="58" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_IntNetTon" Ordinal="59" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_PanamaGrossTon" Ordinal="60" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_PanamaNetTon" Ordinal="61" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_SuezGrossTon" Ordinal="62" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_SuezNetTon" Ordinal="63" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_IMOnumber" Ordinal="64" IsOptional="true" DbType="24" Length="8" />
+                    <Field Name="VES_SepStatus" Ordinal="65" IsOptional="true" DbType="24" Length="3" />
+                    <Field Name="VES_COFRExpDate" Ordinal="66" IsOptional="true" DbType="4" />
+                    <Field Name="VES_USCGExpDate" Ordinal="67" IsOptional="true" DbType="4" />
+                    <Field Name="VES_BreadthMoulded" Ordinal="68" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_BreadthExtreme" Ordinal="69" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_DepthExtreme" Ordinal="70" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_LOA" Ordinal="71" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_LBP" Ordinal="72" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_QualIndivId" Ordinal="73" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_PIClub" Ordinal="74" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_ClassSociety" Ordinal="75" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_SepComments" Ordinal="76" IsOptional="true" DbType="24" Length="50" />
+                    <Field Name="VES_RespContrId" Ordinal="77" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_SpillManId" Ordinal="78" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_GeneralType" Ordinal="79" IsOptional="true" DbType="24" Length="2" />
+                    <Field Name="VES_PrevFlag" Ordinal="80" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_PrevOwner" Ordinal="81" IsOptional="true" DbType="24" Length="50" />
+                    <Field Name="VES_PrevManager" Ordinal="82" IsOptional="true" DbType="24" Length="50" />
+                    <Field Name="VES_ClassID" Ordinal="83" IsOptional="true" DbType="24" Length="15" />
+                    <Field Name="VES_FWPotable" Ordinal="84" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_FWFeed" Ordinal="85" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_OfficialNo" Ordinal="86" IsOptional="true" DbType="24" Length="10" />
+                    <Field Name="VES_FWDistilled" Ordinal="87" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_AcoRefNo" Ordinal="88" IsOptional="true" DbType="16" Precision="5" />
+                    <Field Name="VES_OffAcc" Ordinal="89" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_OffCrew" Ordinal="90" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_PropPitch" Ordinal="91" IsOptional="true" DbType="14" Precision="24" />
+                    <Field Name="VES_OffOps" Ordinal="92" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_Pitch" Ordinal="93" IsOptional="true" DbType="24" Length="1" />
+                    <Field Name="VES_OffTech" Ordinal="94" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_CountFit" Ordinal="95" DbType="22" Precision="3" />
+                    <Field Name="VES_HeadOff" Ordinal="96" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_OffPrch" Ordinal="97" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_LocCode" Ordinal="98" IsOptional="true" DbType="24" Length="4" />
+                    <Field Name="VES_RespOff" Ordinal="99" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_RunCostStart" Ordinal="100" IsOptional="true" DbType="4" />
+                    <Field Name="VES_RunCostEnd" Ordinal="101" IsOptional="true" DbType="4" />
+                    <Field Name="VES_UpdatedBy" Ordinal="102" DbType="24" Length="20" />
+                    <Field Name="VES_VoyCounter" Ordinal="103" IsOptional="true" DbType="5" Precision="4" />
+                    <Field Name="VES_UpdatedOn" Ordinal="104" DbType="4" />
+                    <Field Name="VES_JustifyExpend" Ordinal="105" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="Ves_ManPrch" Ordinal="106" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="Ves_Master" Ordinal="107" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="Ves_Cheng" Ordinal="108" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="Ves_MasterOff" Ordinal="109" IsOptional="true" DbType="4" />
+                    <Field Name="Ves_ChengOff" Ordinal="110" IsOptional="true" DbType="4" />
+                    <Field Name="VES_RepName" Ordinal="111" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="VES_ContCrew" Ordinal="112" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VES_ContTech" Ordinal="113" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VES_ContAcc" Ordinal="114" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VES_ContPrch" Ordinal="115" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VES_ContOps" Ordinal="116" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VES_OwnerVessCode" Ordinal="117" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="rowguid" Ordinal="118" IsRowGUID="true" DbType="25" />
+                    <Field Name="VES_THIRDPARTY" Ordinal="119" IsOptional="true" DbType="22" Precision="3" />
+                    <Field Name="ves_offthirdparty " Ordinal="120" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_BENEOWNER" Ordinal="121" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_REGOWNER" Ordinal="122" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_VSHIPS " Ordinal="123" DbType="2" />
+                    <Field Name="VES_Hide_Crew" Ordinal="124" DbType="2" />
+                    <Field Name="VES_Onboard" Ordinal="125" DbType="2" />
+                    <Field Name="VMO_ID" Ordinal="126" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_Onboard2" Ordinal="127" DbType="8" Precision="10" />
+                    <Field Name="VES_Restricted" Ordinal="128" IsOptional="true" DbType="2" />
+                    <Field Name="Ves_FleetMan" Ordinal="129" IsOptional="true" DbType="24" Length="30" />
+                    <Field Name="VES_SumDisplacement" Ordinal="130" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_WintDisplacement" Ordinal="131" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_TropDisplacement" Ordinal="132" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_LightDisplacement" Ordinal="133" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_NormalDraft" Ordinal="134" IsOptional="true" DbType="6" Precision="38" />
+                    <Field Name="VES_NormalDWT" Ordinal="135" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_NormalDisplacement" Ordinal="136" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VES_SecondClassID" Ordinal="137" IsOptional="true" DbType="24" Length="15" />
+                    <Field Name="VES_SecondClassSociety" Ordinal="138" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VES_DualClass" Ordinal="139" IsOptional="true" DbType="2" />
+                    <Field Name="VDG_ID" Ordinal="140" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="LST_ID" Ordinal="141" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="LogbookStatusChangedOn" Ordinal="142" IsOptional="true" DbType="4" />
+                    <Field Name="LogbookStatusChangedBy" Ordinal="143" IsOptional="true" DbType="24" Length="20" />
+                    <Field Name="VES_NewTropDWT" Ordinal="144" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewLightweight" Ordinal="145" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewWintDWT" Ordinal="146" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewSumDWT" Ordinal="147" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewSumDisplacement" Ordinal="148" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewWintDisplacement" Ordinal="149" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewTropDisplacement" Ordinal="150" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewLightDisplacement" Ordinal="151" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewNormalDWT" Ordinal="152" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                    <Field Name="VES_NewNormalDisplacement" Ordinal="153" IsOptional="true" DbType="5" Precision="18" Scale="2" />
+                  </Fields>
+                </Table>
+                <Table Name="VESTYPE">
+                  <PkConstraintName Name="PK__VESTYPE__5C81C570" />
+                  <Fields>
+                    <Field Name="VTY_ID" Ordinal="1" IsPrimaryKey="true" DbType="24" Length="6" />
+                    <Field Name="VTY_Desc" Ordinal="2" IsOptional="true" DbType="24" Length="60" />
+                    <Field Name="VTY_GenType" Ordinal="3" IsOptional="true" DbType="24" Length="2" />
+                    <Field Name="VTY_UpdatedBy" Ordinal="4" DbType="24" Length="20" />
+                    <Field Name="VTY_UpdatedOn" Ordinal="5" DbType="4" />
+                    <Field Name="CSR_ID" Ordinal="6" IsOptional="true" DbType="24" Length="2" />
+                    <Field Name="rowguid" Ordinal="7" IsRowGUID="true" DbType="25" />
+                    <Field Name="VTY_ISCONTAINER" Ordinal="8" DbType="2" />
+                    <Field Name="VTG_ID" Ordinal="9" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="STC_ID" Ordinal="10" IsOptional="true" DbType="24" Length="12" />
+                    <Field Name="VTY_SHORTDESC" Ordinal="11" IsOptional="true" DbType="24" Length="10" />
+                    <Field Name="VGG_ID" Ordinal="12" IsOptional="true" DbType="24" Length="6" />
+                    <Field Name="VTY_Deleted" Ordinal="13" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VWG_ID" Ordinal="14" IsOptional="true" DbType="24" Length="12" />
+                  </Fields>
+                </Table>
+              </Tables>
+              <StoredProcedures>
+                <StoredProcedure Name="procCTRGenerateIDEx">
+                  <Parameters>
+                    <Parameter Name="@sTableName" Direction="1" Ordinal="1" DbType="24" Length="50" />
+                    <Parameter Name="@sID" Direction="3" Ordinal="2" DbType="24" Length="12" />
+                  </Parameters>
+                </StoredProcedure>
+              </StoredProcedures>
+            </Schema>
+          </Schemas>
+          <ForeignKeyConstraints>
+            <ForeignKeyConstraint Name="dbo:FLEET:FK__FLEET__USR_ID__543BF19A">
+              <FieldPairs>
+                <FieldPair PkField="dbo:USERID:USR_ID" FkField="dbo:FLEET:USR_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:FLTVESS:FK__FLTVESS__FLT_ID__57185E45">
+              <FieldPairs>
+                <FieldPair PkField="dbo:FLEET:FLT_ID" FkField="dbo:FLTVESS:FLT_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:FLTVESS:FK__FLTVESS__VES_ID__580C827E">
+              <FieldPairs>
+                <FieldPair PkField="dbo:VESSEL:VES_ID" FkField="dbo:FLTVESS:VES_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:USERFLEET:FK_USERFLEET_FLEET">
+              <FieldPairs>
+                <FieldPair PkField="dbo:FLEET:FLT_ID" FkField="dbo:USERFLEET:FLT_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:USERFLEET:FK_USERFLEET_USERID">
+              <FieldPairs>
+                <FieldPair PkField="dbo:USERID:USR_ID" FkField="dbo:USERFLEET:USR_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:USERID:FK_USERID_FLEET_FLT_ID">
+              <FieldPairs>
+                <FieldPair PkField="dbo:FLEET:FLT_ID" FkField="dbo:USERID:FLT_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:VESMANAGEMENTDETAILS:FK_VESMANAGEMENTDETAILS_VESSEL_VES_ID">
+              <FieldPairs>
+                <FieldPair PkField="dbo:VESSEL:VES_ID" FkField="dbo:VESMANAGEMENTDETAILS:VES_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:VESRESPSERVICE:FK_VESRESPSERVICE_VESMANAGEMENTDETAILS_VMD_ID">
+              <FieldPairs>
+                <FieldPair PkField="dbo:VESMANAGEMENTDETAILS:VMD_ID" FkField="dbo:VESRESPSERVICE:VMD_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:VESSEL:FK__VESSEL__VTY_ID__3700946E">
+              <FieldPairs>
+                <FieldPair PkField="dbo:VESTYPE:VTY_ID" FkField="dbo:VESSEL:VTY_ID" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+          </ForeignKeyConstraints>
+        </Catalog>
+      </Catalogs>
+    </TargetDatabase>
+  </TargetDatabases>
+  <MappingStores>
+    <MappingStore Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <EntityMappings>
+        <EntityMapping EntityName=":ApiClient" TargetName="Shipsure:dbo:ApiClient">
+          <FieldMappings>
+            <FieldMapping FieldName="AccessCodeLifeTime" TargetFieldName="AccessCodeLifeTime" />
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="AllowedOrigin" TargetFieldName="AllowedOrigin" />
+            <FieldMapping FieldName="ClientId" TargetFieldName="ClientId" />
+            <FieldMapping FieldName="ClientName" TargetFieldName="ClientName" />
+            <FieldMapping FieldName="ClientSecret" TargetFieldName="ClientSecret" />
+            <FieldMapping FieldName="CredentialCheckFrequency" TargetFieldName="CredentialCheckFrequency" />
+            <FieldMapping FieldName="RedirectUri" TargetFieldName="RedirectUri" />
+            <FieldMapping FieldName="RefreshTokenLifetime" TargetFieldName="RefreshTokenLifetime" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="TokenLifeTime" TargetFieldName="TokenLifeTime" />
+            <FieldMapping FieldName="UseClientSecret" TargetFieldName="UseClientSecret" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":CounterPkExample" TargetName="Shipsure:dbo:CounterPKExample">
+          <FieldMappings>
+            <FieldMapping FieldName="CpeCreatedBy" TargetFieldName="CPE_CreatedBy" />
+            <FieldMapping FieldName="CpeCreatedOn" TargetFieldName="CPE_CreatedOn" />
+            <FieldMapping FieldName="CpeId" TargetFieldName="CPE_ID" />
+            <FieldMapping FieldName="CpeInt" TargetFieldName="CPE_INT" />
+            <FieldMapping FieldName="CpeText" TargetFieldName="CPE_TEXT" />
+            <FieldMapping FieldName="CpeUpdatedBy" TargetFieldName="CPE_UpdatedBy" />
+            <FieldMapping FieldName="CpeUpdatedOn" TargetFieldName="CPE_UpdatedOn" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Fleet" TargetName="Shipsure:dbo:FLEET">
+          <FieldMappings>
+            <FieldMapping FieldName="DepId" TargetFieldName="DEP_ID" />
+            <FieldMapping FieldName="FltActive" TargetFieldName="FLT_ACTIVE" />
+            <FieldMapping FieldName="FltDesc" TargetFieldName="FLT_Desc" />
+            <FieldMapping FieldName="FltId" TargetFieldName="FLT_ID" />
+            <FieldMapping FieldName="FltType" TargetFieldName="FLT_Type" />
+            <FieldMapping FieldName="FltUpdatedBy" TargetFieldName="FLT_UpdatedBy" />
+            <FieldMapping FieldName="FltUpdatedOn" TargetFieldName="FLT_UpdatedOn" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="SitId" TargetFieldName="SIT_ID" />
+            <FieldMapping FieldName="UsrId" TargetFieldName="USR_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":FleetType" TargetName="Shipsure:dbo:FleetTypes">
+          <FieldMappings>
+            <FieldMapping FieldName="FtyDescription" TargetFieldName="FTY_Description" />
+            <FieldMapping FieldName="FtyId" TargetFieldName="FTY_ID" />
+            <FieldMapping FieldName="FtyUpdatedBy" TargetFieldName="FTY_UpdatedBy" />
+            <FieldMapping FieldName="FtyUpdatedOn" TargetFieldName="FTY_UpdatedOn" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Fltvess" TargetName="Shipsure:dbo:FLTVESS">
+          <FieldMappings>
+            <FieldMapping FieldName="CoyId" TargetFieldName="COY_ID" />
+            <FieldMapping FieldName="FltId" TargetFieldName="FLT_ID" />
+            <FieldMapping FieldName="FlvId" TargetFieldName="FLV_ID" />
+            <FieldMapping FieldName="FlvUpdatedBy" TargetFieldName="FLV_UpdatedBy" />
+            <FieldMapping FieldName="FlvUpdatedOn" TargetFieldName="FLV_UpdatedOn" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="UftId" TargetFieldName="UFT_ID" />
+            <FieldMapping FieldName="VesId" TargetFieldName="VES_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Secrole" TargetName="Shipsure:dbo:SECRole">
+          <FieldMappings>
+            <FieldMapping FieldName="ApplicableForVessel" TargetFieldName="ApplicableForVessel" />
+            <FieldMapping FieldName="CreatedBy" TargetFieldName="CreatedBy" />
+            <FieldMapping FieldName="CreatedOn" TargetFieldName="CreatedOn" />
+            <FieldMapping FieldName="DefaultRoleForVessel" TargetFieldName="DefaultRoleForVessel" />
+            <FieldMapping FieldName="IsDeleted" TargetFieldName="IsDeleted" />
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" />
+            <FieldMapping FieldName="RoleIdentifier" TargetFieldName="RoleIdentifier" />
+            <FieldMapping FieldName="RoleName" TargetFieldName="RoleName" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="StartupModuleIdentifier" TargetFieldName="StartupModuleIdentifier" />
+            <FieldMapping FieldName="UpdatedBy" TargetFieldName="UpdatedBy" />
+            <FieldMapping FieldName="UpdatedOn" TargetFieldName="UpdatedOn" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":SecuserRole" TargetName="Shipsure:dbo:SECUserRole">
+          <FieldMappings>
+            <FieldMapping FieldName="CreatedBy" TargetFieldName="CreatedBy" />
+            <FieldMapping FieldName="CreatedOn" TargetFieldName="CreatedOn" />
+            <FieldMapping FieldName="IsPrimaryRole" TargetFieldName="IsPrimaryRole" />
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" />
+            <FieldMapping FieldName="RoleIdentifier" TargetFieldName="RoleIdentifier" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="UpdatedBy" TargetFieldName="UpdatedBy" />
+            <FieldMapping FieldName="UpdatedOn" TargetFieldName="UpdatedOn" />
+            <FieldMapping FieldName="UsrId" TargetFieldName="USR_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Userfleet" TargetName="Shipsure:dbo:USERFLEET">
+          <FieldMappings>
+            <FieldMapping FieldName="FltId" TargetFieldName="FLT_ID" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="UftId" TargetFieldName="UFT_ID" />
+            <FieldMapping FieldName="UftUpdatedBy" TargetFieldName="UFT_UpdatedBy" />
+            <FieldMapping FieldName="UftUpdatedOn" TargetFieldName="UFT_UpdatedOn" />
+            <FieldMapping FieldName="UsrId" TargetFieldName="USR_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Userid" TargetName="Shipsure:dbo:USERID">
+          <FieldMappings>
+            <FieldMapping FieldName="CrwId" TargetFieldName="CRW_ID" />
+            <FieldMapping FieldName="DepId" TargetFieldName="DEP_ID" />
+            <FieldMapping FieldName="FltId" TargetFieldName="FLT_ID" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="SitId" TargetFieldName="sit_id" />
+            <FieldMapping FieldName="SitLocCode" TargetFieldName="SIT_LocCode" />
+            <FieldMapping FieldName="UsrBussNo1" TargetFieldName="USR_BussNo1" />
+            <FieldMapping FieldName="UsrBussNo2" TargetFieldName="USR_BussNo2" />
+            <FieldMapping FieldName="UsrDefaultCmp" TargetFieldName="USR_DefaultCMP" />
+            <FieldMapping FieldName="UsrDeleted" TargetFieldName="USR_DELETED" />
+            <FieldMapping FieldName="UsrDisplayName" TargetFieldName="USR_DisplayName" />
+            <FieldMapping FieldName="UsrEmail" TargetFieldName="USR_Email" />
+            <FieldMapping FieldName="UsrFaxNo1" TargetFieldName="USR_FaxNo1" />
+            <FieldMapping FieldName="UsrForename" TargetFieldName="USR_Forename" />
+            <FieldMapping FieldName="UsrHomeNo1" TargetFieldName="USR_HomeNo1" />
+            <FieldMapping FieldName="UsrHomeNo2" TargetFieldName="USR_HomeNo2" />
+            <FieldMapping FieldName="UsrId" TargetFieldName="USR_ID" />
+            <FieldMapping FieldName="UsrInetViewer" TargetFieldName="USR_InetViewer" />
+            <FieldMapping FieldName="UsrLoginid" TargetFieldName="USR_LOGINID" />
+            <FieldMapping FieldName="UsrMobileNo1" TargetFieldName="USR_MobileNo1" />
+            <FieldMapping FieldName="UsrNewId" TargetFieldName="USR_NEW_ID" />
+            <FieldMapping FieldName="UsrOffice" TargetFieldName="USR_Office" />
+            <FieldMapping FieldName="UsrPassword" TargetFieldName="USR_Password" />
+            <FieldMapping FieldName="UsrPcn" TargetFieldName="USR_PCN" />
+            <FieldMapping FieldName="UsrProfType" TargetFieldName="USR_ProfType" />
+            <FieldMapping FieldName="UsrSecAdmin" TargetFieldName="USR_SecAdmin" />
+            <FieldMapping FieldName="UsrSecEqu" TargetFieldName="USR_SecEqu" />
+            <FieldMapping FieldName="UsrSurname" TargetFieldName="USR_Surname" />
+            <FieldMapping FieldName="UsrTitle" TargetFieldName="USR_Title" />
+            <FieldMapping FieldName="UsrUpdatedBy" TargetFieldName="USR_UpdatedBy" />
+            <FieldMapping FieldName="UsrUpdatedOn" TargetFieldName="USR_UpdatedOn" />
+            <FieldMapping FieldName="VesOwnerGrp" TargetFieldName="VES_OwnerGrp" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Vesmanagementdetail" TargetName="Shipsure:dbo:VESMANAGEMENTDETAILS">
+          <FieldMappings>
+            <FieldMapping FieldName="CmpId" TargetFieldName="CMP_ID" />
+            <FieldMapping FieldName="CoyId" TargetFieldName="COY_ID" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="VesId" TargetFieldName="VES_ID" />
+            <FieldMapping FieldName="VmdAcctEnd" TargetFieldName="VMD_AcctEnd" />
+            <FieldMapping FieldName="VmdAcctStart" TargetFieldName="VMD_AcctStart" />
+            <FieldMapping FieldName="VmdAlternativeCode" TargetFieldName="VMD_AlternativeCode" />
+            <FieldMapping FieldName="VmdAltInvAddress" TargetFieldName="VMD_AltInvAddress" />
+            <FieldMapping FieldName="VmdAuthClientLevel" TargetFieldName="VMD_AuthClientLevel" />
+            <FieldMapping FieldName="VmdAuthLevel1" TargetFieldName="VMD_AuthLevel1" />
+            <FieldMapping FieldName="VmdAuthLevel2" TargetFieldName="VMD_AuthLevel2" />
+            <FieldMapping FieldName="VmdAuthLevel3" TargetFieldName="VMD_AuthLevel3" />
+            <FieldMapping FieldName="VmdAuthMinOrderLevel" TargetFieldName="VMD_AuthMinOrderLevel" />
+            <FieldMapping FieldName="VmdAuthOfficeLimit" TargetFieldName="VMD_AuthOfficeLimit" />
+            <FieldMapping FieldName="VmdAuthVesselLimit" TargetFieldName="VMD_AuthVesselLimit" />
+            <FieldMapping FieldName="VmdAuxcode" TargetFieldName="VMD_AUXCODE" />
+            <FieldMapping FieldName="VmdBenOwner" TargetFieldName="VMD_BenOwner" />
+            <FieldMapping FieldName="VmdContractCompany" TargetFieldName="VMD_ContractCompany" />
+            <FieldMapping FieldName="VmdCreatedBy" TargetFieldName="VMD_CreatedBy" />
+            <FieldMapping FieldName="VmdCreatedOn" TargetFieldName="VMD_CreatedOn" />
+            <FieldMapping FieldName="VmdId" TargetFieldName="VMD_ID" />
+            <FieldMapping FieldName="VmdManageEnd" TargetFieldName="VMD_ManageEnd" />
+            <FieldMapping FieldName="VmdManageStart" TargetFieldName="VMD_ManageStart" />
+            <FieldMapping FieldName="VmdManEstdateEnd" TargetFieldName="VMD_ManESTDateEnd" />
+            <FieldMapping FieldName="VmdManEstdateStart" TargetFieldName="VMD_ManESTDateStart" />
+            <FieldMapping FieldName="VmdOwner" TargetFieldName="VMD_Owner" />
+            <FieldMapping FieldName="VmdPurchEnd" TargetFieldName="VMD_PurchEnd" />
+            <FieldMapping FieldName="VmdPurchStart" TargetFieldName="VMD_PurchStart" />
+            <FieldMapping FieldName="VmdRegOwner" TargetFieldName="VMD_RegOwner" />
+            <FieldMapping FieldName="VmdUpdatedBy" TargetFieldName="VMD_UpdatedBy" />
+            <FieldMapping FieldName="VmdUpdatedOn" TargetFieldName="VMD_UpdatedOn" />
+            <FieldMapping FieldName="VmdVesselName" TargetFieldName="VMD_VesselName" />
+            <FieldMapping FieldName="VmoId" TargetFieldName="VMO_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Vesrespservice" TargetName="Shipsure:dbo:VESRESPSERVICE">
+          <FieldMappings>
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="UsrId" TargetFieldName="USR_ID" />
+            <FieldMapping FieldName="VmdId" TargetFieldName="VMD_ID" />
+            <FieldMapping FieldName="VrsDeleted" TargetFieldName="VRS_Deleted" />
+            <FieldMapping FieldName="VrsId" TargetFieldName="VRS_ID" />
+            <FieldMapping FieldName="VrsKeyContact" TargetFieldName="VRS_KeyContact" />
+            <FieldMapping FieldName="VrsUpdatedBy" TargetFieldName="VRS_UpdatedBy" />
+            <FieldMapping FieldName="VrsUpdatedOn" TargetFieldName="VRS_UpdatedOn" />
+            <FieldMapping FieldName="VrtId" TargetFieldName="VRT_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Vessel" TargetName="Shipsure:dbo:VESSEL">
+          <FieldMappings>
+            <FieldMapping FieldName="CmpId" TargetFieldName="CMP_ID" />
+            <FieldMapping FieldName="LogbookStatusChangedBy" TargetFieldName="LogbookStatusChangedBy" />
+            <FieldMapping FieldName="LogbookStatusChangedOn" TargetFieldName="LogbookStatusChangedOn" />
+            <FieldMapping FieldName="LstId" TargetFieldName="LST_ID" />
+            <FieldMapping FieldName="MetId" TargetFieldName="MET_ID" />
+            <FieldMapping FieldName="OceId" TargetFieldName="OCE_ID" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="VdgId" TargetFieldName="VDG_ID" />
+            <FieldMapping FieldName="VesAcc" TargetFieldName="VES_Acc" />
+            <FieldMapping FieldName="VesAcoRefNo" TargetFieldName="VES_AcoRefNo" />
+            <FieldMapping FieldName="VesBeneowner" TargetFieldName="VES_BENEOWNER" />
+            <FieldMapping FieldName="VesBreadthExtreme" TargetFieldName="VES_BreadthExtreme" />
+            <FieldMapping FieldName="VesBreadthMoulded" TargetFieldName="VES_BreadthMoulded" />
+            <FieldMapping FieldName="VesCallSign" TargetFieldName="VES_CallSign" />
+            <FieldMapping FieldName="VesChartCode" TargetFieldName="VES_ChartCode" />
+            <FieldMapping FieldName="VesCheng" TargetFieldName="Ves_Cheng" />
+            <FieldMapping FieldName="VesChengOff" TargetFieldName="Ves_ChengOff" />
+            <FieldMapping FieldName="VesClass" TargetFieldName="VES_Class" />
+            <FieldMapping FieldName="VesClassId" TargetFieldName="VES_ClassID" />
+            <FieldMapping FieldName="VesClassSociety" TargetFieldName="VES_ClassSociety" />
+            <FieldMapping FieldName="VesCmpType" TargetFieldName="VES_CmpType" />
+            <FieldMapping FieldName="VesCofrexpDate" TargetFieldName="VES_COFRExpDate" />
+            <FieldMapping FieldName="VesCompanyId" TargetFieldName="VES_CompanyID" />
+            <FieldMapping FieldName="VesContAcc" TargetFieldName="VES_ContAcc" />
+            <FieldMapping FieldName="VesContCrew" TargetFieldName="VES_ContCrew" />
+            <FieldMapping FieldName="VesContOps" TargetFieldName="VES_ContOps" />
+            <FieldMapping FieldName="VesContPrch" TargetFieldName="VES_ContPrch" />
+            <FieldMapping FieldName="VesContTech" TargetFieldName="VES_ContTech" />
+            <FieldMapping FieldName="VesConversion" TargetFieldName="VES_Conversion" />
+            <FieldMapping FieldName="VesConversionDate" TargetFieldName="VES_ConversionDate" />
+            <FieldMapping FieldName="VesCountFit" TargetFieldName="VES_CountFit" />
+            <FieldMapping FieldName="VesCrew" TargetFieldName="VES_Crew" />
+            <FieldMapping FieldName="VesDateBuilt" TargetFieldName="VES_DateBuilt" />
+            <FieldMapping FieldName="VesDepthExtreme" TargetFieldName="VES_DepthExtreme" />
+            <FieldMapping FieldName="VesDesPerson" TargetFieldName="VES_DesPerson" />
+            <FieldMapping FieldName="VesDgConsump" TargetFieldName="VES_DG_Consump" />
+            <FieldMapping FieldName="VesDualClass" TargetFieldName="VES_DualClass" />
+            <FieldMapping FieldName="VesFh" TargetFieldName="VES_FH" />
+            <FieldMapping FieldName="VesFlag" TargetFieldName="VES_Flag" />
+            <FieldMapping FieldName="VesFleet" TargetFieldName="VES_Fleet" />
+            <FieldMapping FieldName="VesFleetMan" TargetFieldName="Ves_FleetMan" />
+            <FieldMapping FieldName="VesFwdistilled" TargetFieldName="VES_FWDistilled" />
+            <FieldMapping FieldName="VesFwfeed" TargetFieldName="VES_FWFeed" />
+            <FieldMapping FieldName="VesFwpotable" TargetFieldName="VES_FWPotable" />
+            <FieldMapping FieldName="VesGeneralType" TargetFieldName="VES_GeneralType" />
+            <FieldMapping FieldName="VesGroup" TargetFieldName="VES_Group" />
+            <FieldMapping FieldName="VesHeadOff" TargetFieldName="VES_HeadOff" />
+            <FieldMapping FieldName="VesHideCrew" TargetFieldName="VES_Hide_Crew" />
+            <FieldMapping FieldName="VesId" TargetFieldName="VES_ID" />
+            <FieldMapping FieldName="VesImonumber" TargetFieldName="VES_IMOnumber" />
+            <FieldMapping FieldName="VesInsur" TargetFieldName="VES_Insur" />
+            <FieldMapping FieldName="VesIntGrossTon" TargetFieldName="VES_IntGrossTon" />
+            <FieldMapping FieldName="VesIntNetTon" TargetFieldName="VES_IntNetTon" />
+            <FieldMapping FieldName="VesJustifyExpend" TargetFieldName="VES_JustifyExpend" />
+            <FieldMapping FieldName="VesKeelLaid" TargetFieldName="VES_KeelLaid" />
+            <FieldMapping FieldName="VesLastDryDock" TargetFieldName="VES_LastDryDock" />
+            <FieldMapping FieldName="VesLbp" TargetFieldName="VES_LBP" />
+            <FieldMapping FieldName="VesLightDisplacement" TargetFieldName="VES_LightDisplacement" />
+            <FieldMapping FieldName="VesLightweight" TargetFieldName="VES_Lightweight" />
+            <FieldMapping FieldName="VesLoa" TargetFieldName="VES_LOA" />
+            <FieldMapping FieldName="VesLocCode" TargetFieldName="VES_LocCode" />
+            <FieldMapping FieldName="VesLocEnd" TargetFieldName="VES_LocEnd" />
+            <FieldMapping FieldName="VesLocEstend" TargetFieldName="VES_LocESTEnd" />
+            <FieldMapping FieldName="VesLocEststart" TargetFieldName="VES_LocESTStart" />
+            <FieldMapping FieldName="VesLocStart" TargetFieldName="VES_LocStart" />
+            <FieldMapping FieldName="VesManageEnd" TargetFieldName="VES_ManageEnd" />
+            <FieldMapping FieldName="VesManageStart" TargetFieldName="VES_ManageStart" />
+            <FieldMapping FieldName="VesManEstdateEnd" TargetFieldName="VES_ManESTDateEnd" />
+            <FieldMapping FieldName="VesManEstdateStart" TargetFieldName="VES_ManESTDateStart" />
+            <FieldMapping FieldName="VesManPrch" TargetFieldName="Ves_ManPrch" />
+            <FieldMapping FieldName="VesMaster" TargetFieldName="Ves_Master" />
+            <FieldMapping FieldName="VesMasterOff" TargetFieldName="Ves_MasterOff" />
+            <FieldMapping FieldName="VesMeConsump" TargetFieldName="VES_ME_Consump" />
+            <FieldMapping FieldName="VesName" TargetFieldName="VES_Name" />
+            <FieldMapping FieldName="VesNewHull" TargetFieldName="VES_NewHull" />
+            <FieldMapping FieldName="VesNewLightDisplacement" TargetFieldName="VES_NewLightDisplacement" />
+            <FieldMapping FieldName="VesNewLightweight" TargetFieldName="VES_NewLightweight" />
+            <FieldMapping FieldName="VesNewNormalDisplacement" TargetFieldName="VES_NewNormalDisplacement" />
+            <FieldMapping FieldName="VesNewNormalDwt" TargetFieldName="VES_NewNormalDWT" />
+            <FieldMapping FieldName="VesNewSumDisplacement" TargetFieldName="VES_NewSumDisplacement" />
+            <FieldMapping FieldName="VesNewSumDwt" TargetFieldName="VES_NewSumDWT" />
+            <FieldMapping FieldName="VesNewTropDisplacement" TargetFieldName="VES_NewTropDisplacement" />
+            <FieldMapping FieldName="VesNewTropDwt" TargetFieldName="VES_NewTropDWT" />
+            <FieldMapping FieldName="VesNewWintDisplacement" TargetFieldName="VES_NewWintDisplacement" />
+            <FieldMapping FieldName="VesNewWintDwt" TargetFieldName="VES_NewWintDWT" />
+            <FieldMapping FieldName="VesNextDryDock" TargetFieldName="VES_NextDryDock" />
+            <FieldMapping FieldName="VesNormalDisplacement" TargetFieldName="VES_NormalDisplacement" />
+            <FieldMapping FieldName="VesNormalDraft" TargetFieldName="VES_NormalDraft" />
+            <FieldMapping FieldName="VesNormalDwt" TargetFieldName="VES_NormalDWT" />
+            <FieldMapping FieldName="VesOceanAreaDate" TargetFieldName="VES_OceanAreaDate" />
+            <FieldMapping FieldName="VesOffAcc" TargetFieldName="VES_OffAcc" />
+            <FieldMapping FieldName="VesOffCrew" TargetFieldName="VES_OffCrew" />
+            <FieldMapping FieldName="VesOffFh" TargetFieldName="VES_OffFH" />
+            <FieldMapping FieldName="VesOfficialNo" TargetFieldName="VES_OfficialNo" />
+            <FieldMapping FieldName="VesOffInsur" TargetFieldName="VES_OffInsur" />
+            <FieldMapping FieldName="VesOffOps" TargetFieldName="VES_OffOps" />
+            <FieldMapping FieldName="VesOffPostFix" TargetFieldName="VES_OffPostFix" />
+            <FieldMapping FieldName="VesOffPrch" TargetFieldName="VES_OffPrch" />
+            <FieldMapping FieldName="VesOffTech" TargetFieldName="VES_OffTech" />
+            <FieldMapping FieldName="VesOffthirdparty" TargetFieldName="ves_offthirdparty " />
+            <FieldMapping FieldName="VesOnboard" TargetFieldName="VES_Onboard" />
+            <FieldMapping FieldName="VesOnboard2" TargetFieldName="VES_Onboard2" />
+            <FieldMapping FieldName="VesOps" TargetFieldName="VES_Ops" />
+            <FieldMapping FieldName="VesOwnerGrp" TargetFieldName="VES_OwnerGrp" />
+            <FieldMapping FieldName="VesOwnerVessCode" TargetFieldName="VES_OwnerVessCode" />
+            <FieldMapping FieldName="VesPanamaGrossTon" TargetFieldName="VES_PanamaGrossTon" />
+            <FieldMapping FieldName="VesPanamaNetTon" TargetFieldName="VES_PanamaNetTon" />
+            <FieldMapping FieldName="VesPiclub" TargetFieldName="VES_PIClub" />
+            <FieldMapping FieldName="VesPitch" TargetFieldName="VES_Pitch" />
+            <FieldMapping FieldName="VesPortRegId" TargetFieldName="VES_PortRegId" />
+            <FieldMapping FieldName="VesPostFix" TargetFieldName="VES_PostFix" />
+            <FieldMapping FieldName="VesPrch" TargetFieldName="VES_Prch" />
+            <FieldMapping FieldName="VesPrevFlag" TargetFieldName="VES_PrevFlag" />
+            <FieldMapping FieldName="VesPrevManager" TargetFieldName="VES_PrevManager" />
+            <FieldMapping FieldName="VesPrevOwner" TargetFieldName="VES_PrevOwner" />
+            <FieldMapping FieldName="VesPropPitch" TargetFieldName="VES_PropPitch" />
+            <FieldMapping FieldName="VesQualIndivId" TargetFieldName="VES_QualIndivId" />
+            <FieldMapping FieldName="VesRegowner" TargetFieldName="VES_REGOWNER" />
+            <FieldMapping FieldName="VesRepName" TargetFieldName="VES_RepName" />
+            <FieldMapping FieldName="VesRespContrId" TargetFieldName="VES_RespContrId" />
+            <FieldMapping FieldName="VesRespOff" TargetFieldName="VES_RespOff" />
+            <FieldMapping FieldName="VesRestricted" TargetFieldName="VES_Restricted" />
+            <FieldMapping FieldName="VesRunCostEnd" TargetFieldName="VES_RunCostEnd" />
+            <FieldMapping FieldName="VesRunCostStart" TargetFieldName="VES_RunCostStart" />
+            <FieldMapping FieldName="VesSecondClassId" TargetFieldName="VES_SecondClassID" />
+            <FieldMapping FieldName="VesSecondClassSociety" TargetFieldName="VES_SecondClassSociety" />
+            <FieldMapping FieldName="VesSepComments" TargetFieldName="VES_SepComments" />
+            <FieldMapping FieldName="VesSepStatus" TargetFieldName="VES_SepStatus" />
+            <FieldMapping FieldName="VesShortName" TargetFieldName="VES_ShortName" />
+            <FieldMapping FieldName="VesSpillManId" TargetFieldName="VES_SpillManId" />
+            <FieldMapping FieldName="VesSuezGrossTon" TargetFieldName="VES_SuezGrossTon" />
+            <FieldMapping FieldName="VesSuezNetTon" TargetFieldName="VES_SuezNetTon" />
+            <FieldMapping FieldName="VesSumDisplacement" TargetFieldName="VES_SumDisplacement" />
+            <FieldMapping FieldName="VesSumDraft" TargetFieldName="VES_SumDraft" />
+            <FieldMapping FieldName="VesSumDwt" TargetFieldName="VES_SumDWT" />
+            <FieldMapping FieldName="VesTech" TargetFieldName="VES_Tech" />
+            <FieldMapping FieldName="VesThirdparty" TargetFieldName="VES_THIRDPARTY" />
+            <FieldMapping FieldName="VesTropDisplacement" TargetFieldName="VES_TropDisplacement" />
+            <FieldMapping FieldName="VesTropDraft" TargetFieldName="VES_TropDraft" />
+            <FieldMapping FieldName="VesTropDwt" TargetFieldName="VES_TropDWT" />
+            <FieldMapping FieldName="VesUpdatedBy" TargetFieldName="VES_UpdatedBy" />
+            <FieldMapping FieldName="VesUpdatedOn" TargetFieldName="VES_UpdatedOn" />
+            <FieldMapping FieldName="VesUscgexpDate" TargetFieldName="VES_USCGExpDate" />
+            <FieldMapping FieldName="VesVoyCounter" TargetFieldName="VES_VoyCounter" />
+            <FieldMapping FieldName="VesVships" TargetFieldName="VES_VSHIPS " />
+            <FieldMapping FieldName="VesWintDisplacement" TargetFieldName="VES_WintDisplacement" />
+            <FieldMapping FieldName="VesWintDraft" TargetFieldName="VES_WintDraft" />
+            <FieldMapping FieldName="VesWintDwt" TargetFieldName="VES_WintDWT" />
+            <FieldMapping FieldName="VesYardBuiltId" TargetFieldName="VES_YardBuiltId" />
+            <FieldMapping FieldName="VhtId" TargetFieldName="VHT_ID" />
+            <FieldMapping FieldName="VmoId" TargetFieldName="VMO_ID" />
+            <FieldMapping FieldName="VssId" TargetFieldName="VSS_ID" />
+            <FieldMapping FieldName="VtyId" TargetFieldName="VTY_ID" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Vestype" TargetName="Shipsure:dbo:VESTYPE">
+          <FieldMappings>
+            <FieldMapping FieldName="CsrId" TargetFieldName="CSR_ID" />
+            <FieldMapping FieldName="Rowguid" TargetFieldName="rowguid" />
+            <FieldMapping FieldName="StcId" TargetFieldName="STC_ID" />
+            <FieldMapping FieldName="VggId" TargetFieldName="VGG_ID" />
+            <FieldMapping FieldName="VtgId" TargetFieldName="VTG_ID" />
+            <FieldMapping FieldName="VtyDeleted" TargetFieldName="VTY_Deleted" />
+            <FieldMapping FieldName="VtyDesc" TargetFieldName="VTY_Desc" />
+            <FieldMapping FieldName="VtyGenType" TargetFieldName="VTY_GenType" />
+            <FieldMapping FieldName="VtyId" TargetFieldName="VTY_ID" />
+            <FieldMapping FieldName="VtyIscontainer" TargetFieldName="VTY_ISCONTAINER" />
+            <FieldMapping FieldName="VtyShortdesc" TargetFieldName="VTY_SHORTDESC" />
+            <FieldMapping FieldName="VtyUpdatedBy" TargetFieldName="VTY_UpdatedBy" />
+            <FieldMapping FieldName="VtyUpdatedOn" TargetFieldName="VTY_UpdatedOn" />
+            <FieldMapping FieldName="VwgId" TargetFieldName="VWG_ID" />
+          </FieldMappings>
+        </EntityMapping>
+      </EntityMappings>
+      <TypedViewMappings />
+      <SPCallMappings>
+        <SPCallMapping SPCallName=":GeneratePrimaryKey" TargetName="Shipsure:dbo:procCTRGenerateIDEx">
+          <FieldMappings>
+            <FieldMapping FieldName="SId" TargetFieldName="@sID" />
+            <FieldMapping FieldName="STableName" TargetFieldName="@sTableName" />
+          </FieldMappings>
+        </SPCallMapping>
+      </SPCallMappings>
+      <TvfCallMappings />
+      <TypeConversionDefinitions />
+    </MappingStore>
+  </MappingStores>
+  <ModelViews />
+  <DerivedModels>
+    <DerivedModel Name="CommonContracts" ObjectID="b9eb7d9e-0651-4f5b-80a8-e6e5a6f9cdff" TargetFrameworkName="DTO Class Model" UseLegacyDefaults="false">
+      <CodeGenerationMetaDataDefaults>
+        <TargetElement Type="32768">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="Serializable" />
+              <Attribute Value="DataContract" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="65536">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="Serializable" />
+              <Attribute Value="DataContract" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="131072">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="DataMember" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="262144">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="DataMember" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+        <TargetElement Type="524288">
+          <Defaults>
+            <Attributes>
+              <Attribute Value="DataMember" />
+            </Attributes>
+          </Defaults>
+        </TargetElement>
+      </CodeGenerationMetaDataDefaults>
+      <Settings>
+        <Property Name="DerivedElementClassNameSuffix" Value="" />
+        <Property Name="PrefixDenormalizedFieldsWithNavigatorName" Value="true" />
+      </Settings>
+      <CodeGenerationCyclePreferences OutputType="3">
+        <LastUsedPreferences>
+          <DestinationRootFolder Value=".\" />
+          <FrameworkName Value="DTO Class Model" />
+          <LanguageName Value="C#" />
+          <PlatformName Value=".NET Standard 2.0" />
+          <PresetName Value="SD.DTOClasses.ReadWriteDTOs" />
+          <RootNamespace Value="CommonContracts" />
+          <TemplateGroup Value="General" />
+          <TemplateBindings>
+            <Binding Name="SD.DTOClassModel.NETStandard20" />
+            <Binding Name="SD.DTOClassModel" />
+            <Binding Name="SD.TemplateBindings.General" />
+          </TemplateBindings>
+        </LastUsedPreferences>
+      </CodeGenerationCyclePreferences>
+      <Documents>
+        <Document Name="ApiClient">
+          <RootEntity Entity=":ApiClient" />
+          <Fields>
+            <Field Name="ClientId">
+              <EntityField Name="ClientId" />
+            </Field>
+            <Field Name="ClientName">
+              <EntityField Name="ClientName" />
+            </Field>
+            <Field Name="ClientSecret">
+              <EntityField Name="ClientSecret" />
+            </Field>
+            <Field Name="RedirectUri">
+              <EntityField Name="RedirectUri" />
+            </Field>
+            <Field Name="RefreshTokenLifetime">
+              <EntityField Name="RefreshTokenLifetime" />
+            </Field>
+            <Field Name="TokenLifeTime">
+              <EntityField Name="TokenLifeTime" />
+            </Field>
+            <Field Name="UseClientSecret">
+              <EntityField Name="UseClientSecret" />
+            </Field>
+          </Fields>
+        </Document>
+        <Document Name="CounterDtoExample">
+          <RootEntity Entity=":CounterPkExample" />
+          <Fields>
+            <Field Name="CpeId">
+              <EntityField Name="CpeId" />
+            </Field>
+            <Field Name="CpeInt">
+              <EntityField Name="CpeInt" />
+            </Field>
+            <Field Name="CpeText">
+              <EntityField Name="CpeText" />
+            </Field>
+          </Fields>
+        </Document>
+        <Document Name="UserFleet">
+          <RootEntity Entity=":Userfleet" />
+          <Fields>
+            <Field Name="FltDesc">
+              <EntityField Name="FltDesc" Entity=":Fleet" NavigatorPath="Fleet" />
+            </Field>
+            <Field Name="FltId">
+              <EntityField Name="FltId" />
+            </Field>
+            <Field Name="FltType">
+              <EntityField Name="FltType" Entity=":Fleet" NavigatorPath="Fleet" />
+            </Field>
+            <Field Name="UsrId">
+              <EntityField Name="UsrId" />
+            </Field>
+          </Fields>
+        </Document>
+      </Documents>
+    </DerivedModel>
+  </DerivedModels>
+</Project>
