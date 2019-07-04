@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "7a00afd3-960d-40a1-9a8a-d9157f53a387",
+		"name": "KilohJwtServerCalls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1_PasswordGrantCall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9a88f91-87af-44c4-b582-506594dd9c27",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"var reftoken = data.refresh_token;\r",
+							"var acctoken = data.access_token;\r",
+							"postman.setEnvironmentVariable(\"accessToken\", acctoken);\r",
+							"postman.setEnvironmentVariable(\"refreshToken\", reftoken);\r",
+							"\r",
+							"tests[\"successful POST request\"] = responseCode.code === 200\r",
+							"tests[\"token retrieved\"] = data.token_type === \"Bearer\"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tokenUrl}}",
+					"host": [
+						"{{tokenUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_Refresh Token Call",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9a88f91-87af-44c4-b582-506594dd9c27",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"var refToken = data.refresh_token;\r",
+							"postman.setEnvironmentVariable(\"refresh_token\", refToken);\r",
+							"\r",
+							"tests[\"successful POST request\"] = responseCode.code === 200\r",
+							"tests[\"token retrieved\"] = data.token_type === \"Bearer\"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "{{refreshToken}}",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tokenUrl}}",
+					"host": [
+						"{{tokenUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_ClientCredentials call",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9a88f91-87af-44c4-b582-506594dd9c27",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"\r",
+							"tests[\"successful POST request\"] = responseCode.code === 200\r",
+							"tests[\"token retrieved\"] = data.token_type === \"Bearer\"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "UENONDg3NjU5MA==",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "cGFzc3dvcmQxMjM=",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "user_assertion",
+							"value": "{{user_assertion}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tokenUrl}}",
+					"host": [
+						"{{tokenUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_ClientCredentials_WithUserAssertion call",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9a88f91-87af-44c4-b582-506594dd9c27",
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"\r",
+							"tests[\"successful POST request\"] = responseCode.code === 200\r",
+							"tests[\"token retrieved\"] = data.token_type === \"Bearer\"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "UENONDg3NjU5MA==",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "cGFzc3dvcmQxMjM=",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "user_assertion",
+							"value": "{{user_assertion}}",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tokenUrl}}",
+					"host": [
+						"{{tokenUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

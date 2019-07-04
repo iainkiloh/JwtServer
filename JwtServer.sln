@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtServer", "JwtServer\JwtServer\JwtServer.csproj", "{B681CDA9-7123-4BA6-8CE4-7182824EE2E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "JwtServer\Interfaces\Interfaces.csproj", "{C067A85D-0837-4B7B-A656-18159C9E8243}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostmanTests", "PostmanTests", "{521E7B3D-ACA7-48DF-BB5A-856D62273222}"
+	ProjectSection(SolutionItems) = preProject
+		JwtServerTesting.postman_environment.json = JwtServerTesting.postman_environment.json
+		KilohJwtServerCalls.postman_collection.json = KilohJwtServerCalls.postman_collection.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtSecurity", "JwtServer\Model\DatabaseGeneric\JwtSecurity.csproj", "{19B40E5F-4221-4498-AB66-513A722FF0E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtSecurityDBSpecific", "JwtServer\Model\DatabaseSpecific\JwtSecurityDBSpecific.csproj", "{550C3F33-29C7-457E-BA0F-7682B5FB6F3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtSecurityContracts", "JwtServer\Model\JwtSecurityContracts\JwtSecurityContracts.csproj", "{0A48CE84-D123-4907-B76C-35467253E2DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtSecurityContracts.Persistence", "JwtServer\Model\JwtSecurityContracts.Persistence\JwtSecurityContracts.Persistence.csproj", "{30E9E79F-AE26-4F40-9A7B-AD05A6BD4C71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B681CDA9-7123-4BA6-8CE4-7182824EE2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B681CDA9-7123-4BA6-8CE4-7182824EE2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B681CDA9-7123-4BA6-8CE4-7182824EE2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B681CDA9-7123-4BA6-8CE4-7182824EE2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C067A85D-0837-4B7B-A656-18159C9E8243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C067A85D-0837-4B7B-A656-18159C9E8243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C067A85D-0837-4B7B-A656-18159C9E8243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C067A85D-0837-4B7B-A656-18159C9E8243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B40E5F-4221-4498-AB66-513A722FF0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B40E5F-4221-4498-AB66-513A722FF0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B40E5F-4221-4498-AB66-513A722FF0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B40E5F-4221-4498-AB66-513A722FF0E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{550C3F33-29C7-457E-BA0F-7682B5FB6F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550C3F33-29C7-457E-BA0F-7682B5FB6F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550C3F33-29C7-457E-BA0F-7682B5FB6F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550C3F33-29C7-457E-BA0F-7682B5FB6F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A48CE84-D123-4907-B76C-35467253E2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A48CE84-D123-4907-B76C-35467253E2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A48CE84-D123-4907-B76C-35467253E2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A48CE84-D123-4907-B76C-35467253E2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E9E79F-AE26-4F40-9A7B-AD05A6BD4C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E9E79F-AE26-4F40-9A7B-AD05A6BD4C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E9E79F-AE26-4F40-9A7B-AD05A6BD4C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E9E79F-AE26-4F40-9A7B-AD05A6BD4C71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E3F23BD-E3F7-42AE-B5BF-FFD79E601773}
+	EndGlobalSection
+EndGlobal
