@@ -1,0 +1,49 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: jwtserverdev
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5 
+  template:
+    metadata:
+      labels:
+        app: jwtserverdev
+    spec:
+      containers:
+      - name: jwtserverdev
+        image: iainkiloh/jwtserver:v3
+        ports:
+        - containerPort: 80
+        env:
+        - name: "ASPNETCORE_ENVIRONMENT"
+          value: "Development"
+        volumeMounts:
+        - name: secrets
+          mountPath: /app/secrets
+          readOnly: true
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+      volumes:
+      - name: secrets
+        secret:
+          secretName: secret-jwtserver-dev  
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jwtserverdev-srv
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    nodePort: 30036
+  selector:
+    app: jwtserverdev
