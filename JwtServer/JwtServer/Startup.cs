@@ -1,12 +1,8 @@
-﻿using AspNet.Security.OpenIdConnect.Extensions;
-using AspNet.Security.OpenIdConnect.Primitives;
-using AspNetCoreRateLimit;
+﻿using AspNetCoreRateLimit;
 using Interfaces;
-using JwtSecurityContracts.DtoClasses;
 using JwtServer.AuthProviders;
 using JwtServer.Infrastructure.Internal;
 using JwtServer.Infrastructure.Services;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Server.Features;
@@ -18,15 +14,12 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using SD.LLBLGen.Pro.DQE.PostgreSql;
 using SD.LLBLGen.Pro.ORMSupportClasses;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace JwtServer
 {
@@ -73,25 +66,6 @@ namespace JwtServer
             RuntimeConfiguration.ConfigureDQE<PostgreSqlDQEConfiguration>(
                                             c => c.AddDbProviderFactory(typeof(Npgsql.NpgsqlFactory)));
                                                    
-        }
-
-        private void ConfigureHostAndPort(IApplicationBuilder app)
-        {
-            _host = "JwtServer";
-            _port = "Unknown";
-
-            var serverAddressFeature = (IServerAddressesFeature)app.ServerFeatures[typeof(Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature)];
-
-            if (serverAddressFeature.Addresses.Count > 0)
-            {
-                var address = serverAddressFeature.Addresses.ElementAt(0);
-                if (!string.IsNullOrEmpty(address))
-                {
-                    _host = address;
-                    var portIndex = address.LastIndexOf(":");
-                    _port = address.Substring(portIndex + 1).TrimEnd('/');
-                }
-            }
         }
 
 
@@ -142,150 +116,10 @@ namespace JwtServer
                 options.RefreshTokenLifetime = TimeSpan.FromMinutes(600);
                 options.AllowInsecureHttp = true;
                 options.ClaimsIssuer = Configuration["Jwt:Issuer"];
-                options.Provider.OnValidateTokenRequest = (context) =>
-                {
-                    // Reject token requests that don't use grant_type=password or grant_type=refresh_token
-                    //or grant_type=client_credentials
-                    if (!context.Request.IsPasswordGrantType() && !context.Request.IsRefreshTokenGrantType()
-                       && !context.Request.IsClientCredentialsGrantType())
-                    {
-                        context.Reject(
-                            error: OpenIdConnectConstants.Errors.UnsupportedGrantType,
-                            description: "Only grant_types password, refresh_token and client_credentials " +
-                                         "are accepted by this server.");
-
-                        return Task.CompletedTask;
-                    }
-
-                    // parameter is missing to support unauthenticated token requests.
-                    if (string.IsNullOrEmpty(context.ClientId))
-                    {
-                        context.Reject(
-                           error: OpenIdConnectConstants.Errors.UnsupportedGrantType,
-                           description: "client id was not supplied - request rejected.");
-
-                        return Task.CompletedTask;
-                    }
-
-                    //validate the clientId and clientSecret
-                    if (!string.IsNullOrEmpty(context.ClientSecret))
-                    {
-                        var validClient = KilohAuthProvider.ValidateClient(context.ClientId, context.ClientSecret);
-                        if (validClient)
-                        {
-                            context.Validate();
-                        }
-                    }
-
-                    return Task.CompletedTask;
-                };
-
-                // Implement OnHandleTokenRequest to support token requests.
-                options.Provider.OnHandleTokenRequest = (context) =>
-                {
-                    // Only handle grant_type=password token requests and client-Credentials requests
-                    // then let OpenID Connect server handle the other grant types.
-                    if (context.Request.IsClientCredentialsGrantType())
-                    {
-                        var identity = new ClaimsIdentity(context.Scheme.Name,
-                          OpenIdConnectConstants.Claims.Name,
-                          OpenIdConnectConstants.Claims.Role);
-
-                        //client credentials cals take an optional user assertion in an attempt
-                        //to avoid the 'confised deputy' issue on downstream api calls
-                        UserAssertion user = null;
-                        try
-                        {
-                            var userAssertion = context.Request.GetParameter("user_assertion");
-                            if (userAssertion.HasValue)
-                            {
-                                user = JsonConvert.DeserializeObject<UserAssertion>(userAssertion.Value.ToString());
-                            }
-                        }
-                        catch
-                        {   //unable to get user info so set user to null and continue with the grant
-                            user = null;
-                        }
-
-                        //can we get userID for the original user if passed via a user-assertion
-                        UserDto userDto = null;
-                        if (user != null) { userDto = KilohAuthProvider.GetUserById(user.UserId); }
-
-                        if (userDto != null)
-                        {
-                            identity.AddClaim(OpenIdConnectConstants.Claims.Subject, user.UserId.ToString());
-                            KilohAuthProvider.AddClaims(ref identity, user.UserId, context.Request.ClientId);//Infrastructure.Internal.JwtSecurity.ClientId);
-                        }
-                        else
-                        {
-                            identity.AddClaim(OpenIdConnectConstants.Claims.Subject, context.Request.ClientId);//Infrastructure.Internal.JwtSecurity.ClientId);
-                        }
-
-                        var ticket = new AuthenticationTicket(
-                             new ClaimsPrincipal(identity),
-                             new AuthenticationProperties(),
-                             context.Scheme.Name);
-
-                        //default client credentials tokens to a very short lifetime
-                        //they are only being used for 1 time downstream api requests
-                        ticket.SetAccessTokenLifetime(TimeSpan.FromMinutes(1));
-
-                        context.Validate(ticket);
-
-                        return Task.CompletedTask;
-
-                    }
-
-                    //handle condition for password grant requests
-                    if (context.Request.IsPasswordGrantType())
-                    {
-                        var validateResult = KilohAuthProvider.ValidateUser(context.Request.Username, context.Request.Password);
-                        if (!validateResult.Validated)
-                        {
-                            var message = "Invalid user credentials";
-                            context.Reject(
-                               error: OpenIdConnectConstants.Errors.InvalidGrant,
-                               description: message);
-
-
-                            return Task.CompletedTask;
-                        }
-
-                        var identity = new ClaimsIdentity(context.Scheme.Name,
-                            OpenIdConnectConstants.Claims.Name,
-                            OpenIdConnectConstants.Claims.Role);
-
-                        //// Add the mandatory subject/user identifier claim.
-                        //identity.AddClaim(OpenIdConnectConstants.Claims.Subject, "[unique id]");
-                        identity.AddClaim(OpenIdConnectConstants.Claims.Subject, validateResult.UserId != 0 ? validateResult.UserId.ToString() : "not_known");
-
-                        //// By default, claims are not serialized in the access/identity tokens.
-                        //// Use the overload taking a "destinations" parameter to make sure
-                        //// your claims are correctly inserted in the appropriate tokens.
-                        //add custom claims to the Identity
-                        KilohAuthProvider.AddClaims(ref identity, validateResult.UserId, context.Request.ClientId);// Infrastructure.Internal.JwtSecurity.ClientId);
-
-                        var ticket = new AuthenticationTicket(
-                             new ClaimsPrincipal(identity),
-                             new AuthenticationProperties(),
-                             context.Scheme.Name);
-
-                        // Call SetScopes with the list of scopes you want to grant
-                        // (specify offline_access to issue a refresh token).
-                        ticket.SetScopes(
-                            OpenIdConnectConstants.Scopes.OfflineAccess);
-
-                        //access and refresh token lifetime is determined by the client app
-                        var client = KilohAuthProvider.GetApiClientByIdAndSecret(context.Request.ClientId, context.Request.ClientSecret);
-
-                        ticket.SetAccessTokenLifetime(TimeSpan.FromMinutes(client.TokenLifetimeMinutes));
-                        ticket.SetRefreshTokenLifetime(TimeSpan.FromMinutes(client.RefreshTokenLifetimeMinutes));
-
-                        context.Validate(ticket);
-                    }
-
-                    return Task.CompletedTask;
-                };
+                // Implement OnHandleValidateRequest.
+                options.Provider.OnValidateTokenRequest = (context) => KilohAuthProvider.ValidateTokenRequest(context);
+                // Implement OnHandleTokenRequest
+                options.Provider.OnHandleTokenRequest = (context) => KilohAuthProvider.HandleTokenRequest(context);
             }
             );
 
@@ -304,7 +138,7 @@ namespace JwtServer
                     options.SubstituteApiVersionInUrl = true;
                 });
 
-            
+
             services.AddApiVersioning(options => options.ReportApiVersions = true);
             services.AddSwaggerGen(
                 options =>
@@ -416,7 +250,27 @@ namespace JwtServer
             return info;
         }
 
-      
+
+        private void ConfigureHostAndPort(IApplicationBuilder app)
+        {
+            _host = Environment.MachineName;
+            _port = "Unknown";
+
+            var serverAddressFeature = (IServerAddressesFeature)app.ServerFeatures[typeof(Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature)];
+
+            if (serverAddressFeature.Addresses.Count > 0)
+            {
+                var address = serverAddressFeature.Addresses.ElementAt(0);
+                if (!string.IsNullOrEmpty(address))
+                {
+                    //_host = address;
+                    var portIndex = address.LastIndexOf(":");
+                    _port = address.Substring(portIndex + 1).TrimEnd('/');
+                }
+            }
+        }
+
+
 
     }
 

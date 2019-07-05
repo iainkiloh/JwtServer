@@ -43,8 +43,6 @@ namespace JwtServerAttributes
                 var controllerFullName = controllerDescriptor.ControllerTypeInfo.FullName;
                 var actionName = controllerDescriptor.ActionName;
 
-                //TODO - add your api name below
-
                     Logging.logger.Log(
                       NLog.LogLevel.Error,
                       Environment.NewLine +
