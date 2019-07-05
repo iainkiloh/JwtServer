@@ -21,6 +21,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtSecurityContracts", "Jwt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtSecurityContracts.Persistence", "JwtServer\Model\JwtSecurityContracts.Persistence\JwtSecurityContracts.Persistence.csproj", "{30E9E79F-AE26-4F40-9A7B-AD05A6BD4C71}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containerization", "Containerization", "{89467598-D1DB-4D7D-A011-F6D779D4616E}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		Dockerfile = Dockerfile
+		externalservicedb.yml = externalservicedb.yml
+		kubermanfest-dev.yaml = kubermanfest-dev.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
